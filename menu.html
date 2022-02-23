@@ -1,537 +1,169 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>CodePen - Multi Step Form with progress bar jQuery and CSS3</title>
+    <link rel="stylesheet" href="./style.css">
     <style>
-        body {
-            position: relative;
-            overflow-x: hidden;
-            background-color: #CFD8DC;
-        }
-
-        body,
-        html {
-            height: 100%;
-        }
-
-        .nav .open > a,
-        .nav .open > a:hover,
-        .nav .open > a:focus {
-            background-color: transparent;
-        }
-
-        /*-------------------------------*/
-        /*           Wrappers            */
-        /*-------------------------------*/
-
-        #wrapper {
-            padding-left: 0;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-
-            #wrapper.toggled {
-                padding-left: 220px;
-            }
-
-        #sidebar-wrapper {
-            z-index: 1000;
-            left: 220px;
-            width: 0;
-            height: 100%;
-            margin-left: -220px;
-            overflow-y: auto;
-            overflow-x: hidden;
-            background: #1a1a1a;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-
-            #sidebar-wrapper::-webkit-scrollbar {
-                display: none;
-            }
-
-        #wrapper.toggled #sidebar-wrapper {
-            width: 220px;
-        }
-
-        #page-content-wrapper {
-            width: 100%;
-            padding-top: 70px;
-        }
-
-        #wrapper.toggled #page-content-wrapper {
-            position: absolute;
-            margin-right: -220px;
-        }
-
-        /*-------------------------------*/
-        /*     Sidebar nav styles        */
-        /*-------------------------------*/
-        .navbar {
-            padding: 0;
-        }
-
-        .sidebar-nav {
-            position: absolute;
-            top: 0;
-            width: 220px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-            .sidebar-nav li {
-                position: relative;
-                line-height: 20px;
-                display: inline-block;
-                width: 100%;
-            }
-
-                .sidebar-nav li:before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    height: 100%;
-                    width: 3px;
-                    background-color: #1c1c1c;
-                    -webkit-transition: width .2s ease-in;
-                    -moz-transition: width .2s ease-in;
-                    -ms-transition: width .2s ease-in;
-                    transition: width .2s ease-in;
-                }
-
-                .sidebar-nav li:hover {
-                    background: skyblue !important;
-                    border-radius: 10px;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                }
-
-                    .sidebar-nav li:hover:before,
-                    .sidebar-nav li.open:hover:before {
-                        width: 100%;
-                        -webkit-transition: width .2s ease-in;
-                        -moz-transition: width .2s ease-in;
-                        -ms-transition: width .2s ease-in;
-                        transition: width .2s ease-in;
-                    }
-
-                .sidebar-nav li a {
-                    display: block;
-                    color: #ddd;
-                    text-decoration: none;
-                    padding: 10px 15px 10px 30px;
-                }
-
-                    .sidebar-nav li a:hover,
-                    .sidebar-nav li a:active,
-                    .sidebar-nav li a:focus,
-                    .sidebar-nav li.open a:hover,
-                    .sidebar-nav li.open a:active,
-                    .sidebar-nav li.open a:focus {
-                        color: #fff;
-                        text-decoration: none;
-                        background-color: transparent;
-                    }
-
-        .sidebar-header {
-            text-align: center;
-            font-size: 20px;
-            position: relative;
-            width: 100%;
+        .button {
+            background: rgb(237, 40, 70);
+            border-radius: 5px;
+            padding: 15px 25px;
             display: inline-block;
+            margin: 10px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.5);
         }
-
-        .sidebar-brand {
-            height: 65px;
-            position: relative;
-            background: #212531;
-            background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-            padding-top: 1em;
+        
+        .disabled {
+            display: none;
         }
-
-            .sidebar-brand a {
-                color: #ddd;
-            }
-
-                .sidebar-brand a:hover {
-                    color: #fff;
-                    text-decoration: none;
-                }
-
-        .dropdown-header {
-            text-align: center;
+        
+        section {
+            padding: 50px;
+            max-width: 300px;
+            margin: 30px auto;
+            background: white;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        input {
+            width: 100%;
+            margin: 7px 0px;
+            display: inline-block;
+            padding: 12px 25px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
             font-size: 1em;
-            color: #ddd;
-            background: #212531;
-            background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+            font-family: inherit;
+            background: white;
         }
-
-        .sidebar-nav .dropdown-menu {
-            position: relative;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            border-radius: 0;
-            border: none;
-            background-color: #222;
-            box-shadow: none;
-        }
-
-        .dropdown-menu.show {
-            top: 0;
-        }
-        /*Fontawesome icons*/
-        .nav.sidebar-nav li a::before {
-            font-family: fontawesome;
-            content: "\f12e";
-            vertical-align: baseline;
-            display: inline-block;
-            padding-right: 5px;
-        }
-
-        a[href*="#home"]::before {
-            content: "\f015" !important;
-        }
-
-        a[href*="#about"]::before {
-            content: "\f129" !important;
-        }
-
-        a[href*="#events"]::before {
-            content: "\f073" !important;
-        }
-
-        a[href*="#events"]::before {
-            content: "\f073" !important;
-        }
-
-        a[href*="#team"]::before {
-            content: "\f0c0" !important;
-        }
-
-        a[href*="#works"]::before {
-            content: "\f0b1" !important;
-        }
-
-        a[href*="#pictures"]::before {
-            content: "\f03e" !important;
-        }
-
-        a[href*="#videos"]::before {
-            content: "\f03d" !important;
-        }
-
-        a[href*="#books"]::before {
-            content: "\f02d" !important;
-        }
-
-        a[href*="#art"]::before {
-            content: "\f1fc" !important;
-        }
-
-        a[href*="#awards"]::before {
-            content: "\f02e" !important;
-        }
-
-        a[href*="#services"]::before {
-            content: "\f013" !important;
-        }
-
-        a[href*="#contact"]::before {
-            content: "\f086" !important;
-        }
-
-        a[href*="#followme"]::before {
-            content: "\f099" !important;
-            color: #0084b4;
-        }
-        /*-------------------------------*/
-        /*       Hamburger-Cross         */
-        /*-------------------------------*/
-
-        .hamburger {
-            position: fixed;
-            top: 20px;
-            z-index: 999;
-            display: block;
-            width: 32px;
-            height: 32px;
-            margin-left: 15px;
-            background: transparent;
-            border: none;
-        }
-
-            .hamburger:hover,
-            .hamburger:focus,
-            .hamburger:active {
-                outline: none;
-            }
-
-            .hamburger.is-closed:before {
-                content: '';
-                display: block;
-                width: 100px;
-                font-size: 14px;
-                color: #fff;
-                line-height: 32px;
-                text-align: center;
-                opacity: 0;
-                -webkit-transform: translate3d(0,0,0);
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-closed:hover:before {
-                opacity: 1;
-                display: block;
-                -webkit-transform: translate3d(-100px,0,0);
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-closed .hamb-top,
-            .hamburger.is-closed .hamb-middle,
-            .hamburger.is-closed .hamb-bottom,
-            .hamburger.is-open .hamb-top,
-            .hamburger.is-open .hamb-middle,
-            .hamburger.is-open .hamb-bottom {
-                position: absolute;
-                left: 0;
-                height: 4px;
-                width: 100%;
-            }
-
-            .hamburger.is-closed .hamb-top,
-            .hamburger.is-closed .hamb-middle,
-            .hamburger.is-closed .hamb-bottom {
-                background-color: #1a1a1a;
-            }
-
-            .hamburger.is-closed .hamb-top {
-                top: 5px;
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-closed .hamb-middle {
-                top: 50%;
-                margin-top: -2px;
-            }
-
-            .hamburger.is-closed .hamb-bottom {
-                bottom: 5px;
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-closed:hover .hamb-top {
-                top: 0;
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-closed:hover .hamb-bottom {
-                bottom: 0;
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-open .hamb-top,
-            .hamburger.is-open .hamb-middle,
-            .hamburger.is-open .hamb-bottom {
-                background-color: #1a1a1a;
-            }
-
-            .hamburger.is-open .hamb-top,
-            .hamburger.is-open .hamb-bottom {
-                top: 50%;
-                margin-top: -2px;
-            }
-
-            .hamburger.is-open .hamb-top {
-                -webkit-transform: rotate(45deg);
-                -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
-            }
-
-            .hamburger.is-open .hamb-middle {
-                display: none;
-            }
-
-            .hamburger.is-open .hamb-bottom {
-                -webkit-transform: rotate(-45deg);
-                -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
-            }
-
-            .hamburger.is-open:before {
-                content: '';
-                display: block;
-                width: 100px;
-                font-size: 14px;
-                color: #fff;
-                line-height: 32px;
-                text-align: center;
-                opacity: 0;
-                -webkit-transform: translate3d(0,0,0);
-                -webkit-transition: all .35s ease-in-out;
-            }
-
-            .hamburger.is-open:hover:before {
-                opacity: 1;
-                display: block;
-                -webkit-transform: translate3d(-100px,0,0);
-                -webkit-transition: all .35s ease-in-out;
-            }
-        #video-viewport {
-            position: absolute;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            z-index: -1; /* for accessing the video by click */
-        }
-
-        body {
-            margin: 0;
-        }
-        /*-------------------------------*/
-        /*            Overlay            */
-        /*-------------------------------*/
     </style>
 </head>
+
 <body>
-    <div id="wrapper">
-        <div class="overlay"></div>
 
-        <!-- Sidebar -->
-        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <div class="sidebar-header">
-                    <div class="sidebar-brand">
-                        <a href="#">Brand</a>
-                    </div>
-                </div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#team">Team</a></li>
-                <li class="dropdown">
-                    <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                    <ul class="dropdown-menu animated fadeInLeft" role="menu">
-                        <div class="dropdown-header">Dropdown heading</div>
-                        <li><a href="#pictures">Pictures</a></li>
-                        <li><a href="#videos">Videeos</a></li>
-                        <li><a href="#books">Books</a></li>
-                        <li><a href="#art">Art</a></li>
-                        <li><a href="#awards">Awards</a></li>
-                    </ul>
-                </li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#followme">Follow me</a></li>
-            </ul>
-        </nav>
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-            </button>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h1>Fancy Toggle Sidebar Navigation</h1>
-                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
-                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
-                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
-                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
-                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+    <h1>Online Application</h1>
+    <section>
+        <p>Personal information</p>
+        <input type="text" placeholder="Firstname" />
+        <input type="text" placeholder="Surname" />
+        <input type="text" placeholder="Birthdate" />
+        <input type="text" placeholder="Insurance number" />
+        <input type="text" placeholder="Family status" />
+    </section>
 
-        <div id="video-viewport">
-            <video autoplay preload width="640" height="360">
-                <source src="https://s3.amazonaws.com/whiteboard.is/videos/bg-loop-new.mp4" />
-            </video>
-        </div>
-    </div>
-    <!-- /#wrapper -->
+    <section>
+        <p>Address</p>
+        <input type="text" placeholder="Street, nbr" />
+        <input type="text" placeholder="City" />
+        <input type="text" placeholder="Postcode" />
+        <input type="text" placeholder="Country" />
+    </section>
+
+    <section>
+        <p>Contact information</p>
+        <input type="text" placeholder="Email address" />
+        <input type="text" placeholder="Phone" />
+        <input type="text" placeholder="Mobile" />
+    </section>
+
+    <section>
+        <p>Application</p>
+        <input type="text" placeholder="Preferred entrance date" />
+        <input type="text" placeholder="Number of people" />
+    </section>
+
+    <section>
+        <p>General condtitions</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <div class="button" id="prev">&larr; Previous</div>
+    <div class="button" id="next">Next &rarr;</div>
+    <div class="button" id="submit">Agree and send application</div>
     <!-- partial -->
-    
-    <script src='assets/js/jquery-3.6.0.min.js'></script>
-    <script src='assets/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script>
-        $(document).ready(function () {
-            var trigger = $('.hamburger'),
-                overlay = $('.overlay'),
-                isClosed = false;
+        $(document).ready(function() {
+            var base_color = "rgb(230,230,230)";
+            var active_color = "rgb(237, 40, 70)";
 
-            trigger.click(function () {
-                hamburger_cross();
-            });
 
-            function hamburger_cross() {
+            var child = 1;
+            var length = $("section").length - 1;
+            $("#prev").addClass("disabled");
+            $("#submit").addClass("disabled");
 
-                if (isClosed == true) {
-                    overlay.hide();
-                    trigger.removeClass('is-open');
-                    trigger.addClass('is-closed');
-                    isClosed = false;
-                } else {
-                    overlay.show();
-                    trigger.removeClass('is-closed');
-                    trigger.addClass('is-open');
-                    isClosed = true;
-                }
+            $("section").not("section:nth-of-type(1)").hide();
+            $("section").not("section:nth-of-type(1)").css('transform', 'translateX(100px)');
+
+            var svgWidth = length * 200 + 24;
+
+
+            function makeSVG(tag, attrs) {
+                var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+                for (var k in attrs) el.setAttribute(k, attrs[k]);
+                return el;
             }
 
-            $('[data-toggle="offcanvas"]').click(function () {
-                $('#wrapper').toggleClass('toggled');
+            for (i = 0; i < length; i++) {
+                var positionX = 12 + i * 200;
+                var rect = makeSVG("rect", {
+                    x: positionX,
+                    y: 9,
+                    width: 200,
+                    height: 6
+                });
+
+            }
+
+
+            $("circle:nth-of-type(1)").css("fill", active_color);
+
+
+            $(".button").click(function() {
+                var id = $(this).attr("id");
+                if (id == "next") {
+                    $("#prev").removeClass("disabled");
+                    if (child >= length) {
+                        $(this).addClass("disabled");
+                        $('#submit').removeClass("disabled");
+                    }
+                    if (child <= length) {
+                        child++;
+                    }
+                } else if (id == "prev") {
+                    $("#next").removeClass("disabled");
+                    $('#submit').addClass("disabled");
+                    if (child <= 2) {
+                        $(this).addClass("disabled");
+                    }
+                    if (child > 1) {
+                        child--;
+                    }
+                }
+                var circle_child = child + 1;
+
+                var currentSection = $("section:nth-of-type(" + child + ")");
+                currentSection.fadeIn();
+                currentSection.css('transform', 'translateX(0)');
+                currentSection.prevAll('section').css('transform', 'translateX(-100px)');
+                currentSection.nextAll('section').css('transform', 'translateX(100px)');
+                $('section').not(currentSection).hide();
             });
+
         });
-        var min_w = 300; // minimum video width allowed
-        var vid_w_orig;  // original video dimensions
-        var vid_h_orig;
-
-        jQuery(function () { // runs after DOM has loaded
-
-            vid_w_orig = parseInt(jQuery('video').attr('width'));
-            vid_h_orig = parseInt(jQuery('video').attr('height'));
-            $('#debug').append("<p>DOM loaded</p>");
-
-            jQuery(window).resize(function () { resizeToCover(); });
-            jQuery(window).trigger('resize');
-        });
-
-        function resizeToCover() {
-
-            // set the video viewport to the window size
-            jQuery('#video-viewport').width(jQuery(window).width());
-            jQuery('#video-viewport').height(jQuery(window).height());
-
-            // use largest scale factor of horizontal/vertical
-            var scale_h = jQuery(window).width() / vid_w_orig;
-            var scale_v = jQuery(window).height() / vid_h_orig;
-            var scale = scale_h > scale_v ? scale_h : scale_v;
-
-            // don't allow scaled width < minimum video width
-            if (scale * vid_w_orig < min_w) { scale = min_w / vid_w_orig; };
-
-            // now scale the video
-            jQuery('video').width(scale * vid_w_orig);
-            jQuery('video').height(scale * vid_h_orig);
-            // and center it by scrolling the video viewport
-            jQuery('#video-viewport').scrollLeft((jQuery('video').width() - jQuery(window).width()) / 2);
-            jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
-        };
     </script>
 </body>
+
 </html>

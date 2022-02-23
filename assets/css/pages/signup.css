@@ -1,0 +1,249 @@
+/*#region sidebar*/
+
+.sidebar {
+    display: flex;
+    overflow-x: hidden;
+    padding: 72px 48px;
+    background-image: linear-gradient(-1deg, #394458, #191e28 96%);
+    content: "";
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 460px;
+    z-index: 0;
+    justify-content: center;
+}
+
+.sidebar h3 {
+    color: #b5b9c1;
+    margin-bottom: 64px;
+    font-size: .9375rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+
+/*#endregion*/
+
+.signup {
+    width: calc(100% - 460px);
+    padding: 72px 115px;
+}
+
+.logo_signup {
+    width: 196px;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.logo_signup img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.welcome_alert {
+    background-color: #edf1fd;
+    border-radius: 4px;
+    line-height: 1.33;
+    padding: 12px 16px;
+    margin-top: 25px;
+}
+
+.disabled {
+    display: none;
+}
+
+section {
+    padding: 50px 0;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+    border-bottom: 1px solid #d8d8d8;
+    margin: 30px auto 9px;
+}
+
+
+/*#region form*/
+
+.custom_input {
+    display: block;
+    width: 100%;
+    padding: 0.72rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #455065;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button {
+    background: #204ecf;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.disabled {
+    display: none;
+}
+
+
+/*#endregion*/
+
+@keyframes fade_in_filter {
+    0% {
+        filter: opacity(0)
+    }
+    to {
+        filter: opacity(1)
+    }
+}
+
+@keyframes pop_in {
+    0% {
+        transform: scale(1)
+    }
+    1% {
+        transform: scale(0)
+    }
+    75% {
+        transform: scale(1.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes pop_out {
+    to {
+        background-color: #204ecf;
+        height: 2.9px;
+        width: 2.9px
+    }
+}
+
+.the_map {
+    background: linear-gradient(0deg, #fff, #fff0 33%) 0 0/100% 266px no-repeat, url(../../../assets/images/icon/map_22173d.svg) 0 0/520px auto no-repeat;
+    margin: 0 auto;
+    position: relative;
+    width: 520px
+}
+
+.the_map.is-out {
+    animation: fade_out .4s ease-out forwards
+}
+
+.the_map.is-out .the_map-caption {
+    animation: fade_out .2s ease-in-out forwards, slide_y .4s ease-in-out forwards
+}
+
+.the_map-caption {
+    animation: fade_in .2s ease-in-out 1.2s forwards;
+    margin: 24px auto 0;
+    max-width: 360px;
+    opacity: 0;
+    text-align: center;
+    transform: translateZ(0)
+}
+
+.the_map-talents {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+svg.blue_dots path {
+    fill: #204ecf;
+    opacity: 0
+}
+
+svg.blue_dots.animate_dots-fade_in path {
+    animation: fade_in .2s ease-in-out forwards
+}
+
+svg.blue_dots.animate_dots-fade_in path.talent_dot-skip_animation {
+    animation: none;
+    opacity: 1
+}
+
+svg.blue_dots.animate_dots-stay path {
+    animation: stay .2s;
+    opacity: 1
+}
+
+svg.blue_dots.animate_dots-fade_out path {
+    animation: fade_out .2s ease-in-out forwards;
+    opacity: 1
+}
+
+.the_map-talent {
+    filter: opacity(0);
+    height: 64px;
+    position: absolute;
+    transform-origin: top right;
+    width: 64px
+}
+
+.the_map-talent-avatar,
+.the_map-talent-company {
+    border-radius: 50%;
+    display: block
+}
+
+.the_map-talent-avatar {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #fff;
+    height: 100%;
+    width: 100%
+}
+
+.the_map-talent-company {
+    background-color: #fff;
+    bottom: -12.5%;
+    height: 50%;
+    image-rendering: crisp-edges;
+    position: absolute;
+    right: -12.5%;
+    transform-origin: center;
+    width: 50%
+}
+
+.animate_talent-pop_in {
+    animation-duration: .4s, .4s;
+    animation-fill-mode: forwards;
+    animation-name: pop_in, fade_in_filter;
+    animation-timing-function: ease-in-out, ease-out
+}
+
+.animate_talent-stay {
+    animation: stay .4s;
+    filter: opacity(1)
+}
+
+.animate_talent-pop_out {
+    animation: pop_out .4s ease-in-out forwards, fade_out .4s ease-in-out .6s forwards;
+    background-color: #dee4f880;
+    border-radius: 50%;
+    filter: opacity(1);
+    transition: left .4s ease-in-out, top .4s ease-in-out
+}
+
+.animate_talent-pop_out .the_map-talent-avatar,
+.animate_talent-pop_out .the_map-talent-company {
+    display: none
+}

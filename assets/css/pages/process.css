@@ -21,10 +21,10 @@ body {
 }
 
 .inner_banner h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 3.5rem;
+    line-height: 3.2rem;
     letter-spacing: 1px;
 }
 
@@ -120,6 +120,9 @@ body {
 
 .custom_tab section {
     height: 100vh;
+}
+
+.custom_tab section:not(:nth-child(1)) {
     padding-top: 150px;
 }
 

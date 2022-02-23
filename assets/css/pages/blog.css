@@ -1,0 +1,230 @@
+/*#region inner_banner*/
+
+.inner_banner {
+    width: 100%;
+    background-image: url(https://www.teksystems.com:443/-/media/teksystems/images/banners/veterans-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.inner_banner h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+}
+
+.inner_banner p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    line-height: 1.9rem;
+}
+
+
+/*#endregion*/
+
+
+/*#region publication*/
+
+.publication_section {
+    padding: 3rem;
+}
+
+.publication {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.publication_section .title h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700
+}
+
+.publication_img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.publication_img img {
+    width: 100%;
+}
+
+.publication>.publication_a {
+    overflow: hidden;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.publication>.publication_a .publication_img {
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.publication .publication_img img {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    border-radius: 15px;
+    height: auto;
+    width: auto !important;
+}
+
+.publication>.publication_a:hover .publication_img img {
+    opacity: 1;
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+}
+
+.publication .publication_content {
+    padding: 20px 0px 25px 0px;
+}
+
+.publication_content h2 {
+    height: 58px;
+    overflow: hidden;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+    font-size: 24px;
+    font-weight: bold;
+    color: #021a32;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.publication_content .date {
+    color: var(--blue);
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.publication_content p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222;
+    font-weight: 100;
+}
+
+.publication_section .button {
+    margin: 15px auto 15px;
+    border: 0.18rem solid #444;
+    color: #444;
+}
+
+.publication_container {
+    margin-bottom: 30px;
+}
+
+.publication {
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: hidden
+}
+
+.read_more {
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 0 8px 0;
+    color: var(--green);
+    transition: all 50ms ease-in-out;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+    float: right;
+}
+
+.read_more:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: var(--default);
+    -webkit-transition: all .125s ease-in-out;
+    transition: all .125s ease-in-out;
+}
+
+.publication_a:hover .read_more:after {
+    width: 100%;
+}
+
+.publication_a:hover .read_more,
+.publication_a:hover .read_more {
+    color: var(--default);
+}
+
+
+/*#endregion*/
+
+
+/*#region pagination*/
+
+.page-link {
+    color: var(--default);
+    border: 1px solid var(--default);
+    padding: 0 18px;
+    line-height: 2.4em;
+}
+
+.page-link:hover,
+.page-link:focus,
+.page-link:active,
+.active_page {
+    color: #fff;
+    background-color: var(--default);
+    border-color: var(--default);
+}
+
+.page-link svg {
+    height: 20px;
+}
+
+.page-item:last-child .page-link {
+    padding: 0 12px;
+}
+
+.page-item:first-child .page-link {
+    padding: 0 12px;
+}
+
+
+/*#endregion*/
