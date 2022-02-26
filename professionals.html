@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
+
 <body>
 
 
@@ -80,8 +82,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
-                                        Login
+                                    <a href="login.html" class="login_link">
+                                        <img src="assets/images/icon/user.png" />
+                                        <span>Log in</span>
                                     </a>
                                 </li>
                                 <!-- <li>
@@ -110,14 +113,14 @@
                             Professionals
                         </h2>
                     </div>
-                    
-                    
-                    
-                    
+
+
+
+
                 </div>
             </div>
         </section>
-      
+
 
         <section class="footer_hiring">
             <div class="container-fluid">
@@ -141,7 +144,7 @@
                 <div class="row mb-5">
                     <div class="col-12 col-md-3">
                         <div class="footer_about_us">
-                           <img src="assets/images/talentHutLogo.png" />
+                            <img src="assets/images/talentHutLogo.png" />
                             <p>
                                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra.lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra.
 
@@ -271,7 +274,7 @@
 
                     </div>
                 </div>
-              
+
             </div>
         </section>
     </div>
@@ -280,17 +283,18 @@
     <script src='assets/js/jquery-3.6.0.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             var trigger = $('.hamburger'),
                 overlay = $('.overlay'),
                 isClosed = false;
 
-            trigger.click(function () {
+            trigger.click(function() {
                 hamburger_cross();
             });
-            overlay.click(function () {
+            overlay.click(function() {
                 hamburger_cross();
             });
+
             function hamburger_cross() {
 
                 if (isClosed == true) {
@@ -306,13 +310,12 @@
                 }
             }
 
-            $('[data-toggle="offcanvas"]').click(function () {
+            $('[data-toggle="offcanvas"]').click(function() {
                 $('#wrapper').toggleClass('toggled');
             });
         });
-
-
     </script>
 
 </body>
+
 </html>
