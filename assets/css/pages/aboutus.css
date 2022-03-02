@@ -7,25 +7,25 @@
 .title_about span {
     margin-bottom: 15px;
     color: var(--blue);
-    font-size: 25px;
+    font-size: 23px;
     display: block;
 }
 
 .title_about h2 {
     color: var(--default);
-    font-size: 50px;
+    font-size: 37px;
     display: block;
     text-transform: uppercase;
     font-weight: 900;
-    line-height: 55px;
+    line-height: 40px;
     margin-bottom: 20px;
 }
 
 .about_first p {
-    font-size: 1.4em;
+    font-size: 18px;
     margin-bottom: 20px;
-    line-height: 1.4;
-    font-weight: 100;
+    line-height: 27px;
+    font-weight: 300;
 }
 
 .images_wrapper {
@@ -35,8 +35,8 @@
 
 .about_first .images_wrapper img:last-of-type {
     position: absolute;
-    bottom: -30%;
-    left: 56%;
+    bottom: -20%;
+    left: 48%;
 }
 
 .about_second {
@@ -46,10 +46,10 @@
 }
 
 .about_second p {
-    font-size: 1.4em;
+    font-size: 18px;
     margin-bottom: 20px;
-    line-height: 1.4;
-    font-weight: 100;
+    line-height: 27px;
+    font-weight: 300;
 }
 
 .about_second .images_wrapper img {
@@ -59,7 +59,7 @@
 
 .about_second .images_wrapper img:last-of-type {
     position: absolute;
-    right: 54%;
+    right: 50%;
     bottom: -26%;
 }
 
@@ -72,7 +72,7 @@
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    float: left;
+    margin: auto;
 }
 
 
@@ -177,13 +177,17 @@
     background-image: url(../../../assets/images/callout-pattern.png);
     background-repeat: no-repeat;
     width: 100%;
-    background-position: -220px;
+    background-position: 123%;
     position: relative;
 }
 
 .TalentHut_box_caption .footer_hiring_content p {
     font-size: 24px;
     line-height: 33px;
+}
+
+.footer_hiring_content {
+    margin: 50px 0 80px;
 }
 
 .TalentHut_box_caption:before,
