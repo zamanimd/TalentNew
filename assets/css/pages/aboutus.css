@@ -4,6 +4,10 @@
     flex-wrap: wrap-reverse;
 }
 
+.title_about {
+    margin-top: 35px;
+}
+
 .title_about span {
     margin-bottom: 15px;
     color: var(--blue);
@@ -23,6 +27,7 @@
 
 .about_first p {
     font-size: 18px;
+    margin-top: 30px;
     margin-bottom: 20px;
     line-height: 27px;
     font-weight: 300;
@@ -31,16 +36,17 @@
 .images_wrapper {
     position: relative;
     height: 100%;
+    text-align: center;
 }
 
 .about_first .images_wrapper img:last-of-type {
     position: absolute;
     bottom: -20%;
-    left: 48%;
+    left: 61%;
 }
 
 .about_second {
-    padding-top: 95px;
+    padding-top: 60px;
     padding-bottom: 95px;
     flex-wrap: wrap-reverse;
 }
@@ -50,25 +56,27 @@
     margin-bottom: 20px;
     line-height: 27px;
     font-weight: 300;
+    margin-top: 30px;
 }
 
-.about_second .images_wrapper img {
+
+/* .about_second .images_wrapper img {
     position: absolute;
     right: 0;
-}
+} */
 
 .about_second .images_wrapper img:last-of-type {
     position: absolute;
-    right: 50%;
-    bottom: -26%;
+    bottom: -40px;
+    left: -15px;
 }
 
 .btn_service_small {
     display: block;
     padding: 15px 6px 12px;
     font-size: 16px;
-    border-radius: 6px;
-    width: 25%;
+    border-radius: 0px;
+    width: 160px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
@@ -127,7 +135,7 @@
     margin-bottom: 70px;
     font-size: 1.2rem;
     line-height: 26px;
-    font-weight: 100;
+    font-weight: 300;
     color: #333;
 }
 
@@ -136,8 +144,8 @@
 }
 
 .TalentHut_box_a:hover .btn-primary {
-    background: #c1d82f;
-    color: var(--default);
+    /* background: var(--dark-blue); */
+    color: #fff;
 }
 
 .TalentHut_box_a:hover .btn-primary:before,
@@ -147,15 +155,15 @@
 }
 
 .TalentHut_box_a:hover .btn-primary:before {
-    border-top-color: var(--default);
-    border-right-color: var(--default);
+    border-top-color: var(--dark-blue);
+    border-right-color: var(--dark-blue);
     -webkit-transition: width .125s ease-out, height .125s ease-out .125s;
     transition: width .125s ease-out, height .125s ease-out .125s
 }
 
 .TalentHut_box_a:hover .btn-primary:after {
-    border-bottom-color: var(--default);
-    border-left-color: var(--default);
+    border-bottom-color: var(--dark-blue);
+    border-left-color: var(--dark-blue);
     -webkit-transition: border-color 0s ease-out .25s, width .125s ease-out .25s, height .125s ease-out .3s;
     transition: border-color 0s ease-out .25s, width .125s ease-out .25s, height .125s ease-out .3s
 }
@@ -165,6 +173,14 @@
     transition: all .25s ease-in-out;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.TalentHut_box_a:active .btn_service_small,
+.TalentHut_box_a.active .btn_service_small,
+.TalentHut_box_a:focus .btn_service_small,
+.TalentHut_box_a.focus .btn_service_small {
+    color: #fff;
+    background-color: var(--dark-blue);
 }
 
 
@@ -177,7 +193,7 @@
     background-image: url(../../../assets/images/callout-pattern.png);
     background-repeat: no-repeat;
     width: 100%;
-    background-position: 123%;
+    background-position: 111%;
     position: relative;
 }
 

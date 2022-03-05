@@ -64,6 +64,9 @@ body {
     top: 70px;
     align-self: start;
     padding: 71px 0;
+    height: 100vh;
+    background-image: url(../../../assets/images/callout-pattern.png);
+    background-repeat: no-repeat;
 }
 
 .custom_tab .section-nav ol {
@@ -77,7 +80,7 @@ body {
     padding: 15px 0;
     color: var(--green);
     transition: all 50ms ease-in-out;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
 }
