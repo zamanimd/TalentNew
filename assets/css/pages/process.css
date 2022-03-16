@@ -35,16 +35,16 @@ body {
     word-spacing: 0px;
     line-height: 1.9rem;
 }
-
-
-/*#endregion*/
-
-.title_about span {
-    margin-bottom: 15px;
-    color: var(--blue);
-    font-size: 25px;
-    display: block;
-}
+    .inner_banner p:last-of-type {
+        margin-top:0;
+    }
+    /*#endregion*/
+    .title_about span {
+        margin-bottom: 15px;
+        color: var(--blue);
+        font-size: 25px;
+        display: block;
+    }
 
 .title_about h2 {
     color: var(--default);
