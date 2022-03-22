@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | TALENT HUT</title>
+    <title>Contract Hire | TALENT HUT</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/pages/login.css">
+    <link rel="stylesheet" href="assets/css/pages/service-inner.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+
     <div id="wrapper">
 
         <div class="overlay is-closed" data-toggle="offcanvas"></div>
@@ -59,7 +61,7 @@
                         <div class="col-xl-8 menu">
                             <ul>
                                 <li>
-                                    <a href="index.html" class="active">
+                                    <a href="index.html">
                                         Home
                                     </a>
                                 </li>
@@ -68,8 +70,8 @@
                                         Why Talent Hut
                                     </a>
                                 </li>
-                                <div class="dropdown">
-                                    <button class="dropbtn">Services</button>
+                                <div class="dropdown active">
+                                    <button class="dropbtn ">Services</button>
                                     <div class="dropdown-content">
                                         <a href="freelancers.html">Freelancers</a>
                                         <a href="permanent-hire.html">Permanent Hire</a>
@@ -102,50 +104,81 @@
         </section>
 
 
-        <section>
+        <section class="inner_banner">
             <div class="container">
-                <div class="row justify-content-center mt-5">
-                    <div class="col-12 col-sm-10 col-md-5">
-                        <div class="title">
-                            <h1>
-                                Log in
-                                </h2>
-                        </div>
-
-                        <div class="col-12 mb-3">
-                            <input type="Email" class="custom_input" placeholder="Email" />
-                        </div>
-
-                        <div class="col-12 mb-4">
-                            <input type="password" class="custom_input" placeholder="Password" />
-                        </div>
-
-                        <div class="row mb-3 ">
-                            <div class="col-12 col-md-6">
-                                <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 Lost_password ">
-                                <a href="#" class="text_light_blue">Lost password?</a>
-                            </div>
-                        </div>
-
-                        <div class="col-12 mt-4">
-                            <div class="btn_wrapper">
-                                <a class="btn_service light_blue btn-primary w-100" href="#"> Log in </a>
-                            </div>
-                        </div>
-                        <p class="col-12 footer_text mt-4 mb-5">
-                            No account? <a href="Signup.html" class="text_light_blue">Join TalentHUT</a>
-                        </p>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <h2>TalentHut's Contract Hire Solutions</h2>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section>
+            <div class="container">
+                <div class="row about_first">
+                    <div class="col-12 col-md-6">
+                        <div class="title_about">
+                            <span>
+                                Get long-term relationships without long-term contracts
+                            </span>
+                            <h2>
+                                Hire who you need, when you need.
+                            </h2>
+                        </div>
+                        <p>
+                            No minimums. Just hourly rates to work with highly talented people you can count on. For as many hours and as long (or briefly) as you need.
+                        </p>
+                        <a class="btn_service btn-primary" href="signup.html">How it works</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="images_wrapper">
+                            <img src="assets/images/services/hire-on-your-own-team.jpg" alt="" width="450">
+                            <!-- <img class="img-responsive" src="assets/images/about-us-s.png" alt=""> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row about_p">
+                    <div class="col-12 col-md-12">
+                        <p class="mb-3">TalentHut provides a broad range of freelancers that fall into multiple categories including:
+                        </p>
+                        <p>
+                            Front-end Developers (HTML5, CSS3, JavaScript, etc.) Back-end Developers (Python, Django, Java, C++, PHP, Ruby, iOS, Rails, etc.)</p>
+                        <p>Quality Assurance (Unit Testing, Selenium, PHPUnit, JUnit, Cucumber, etc.) Designers (UI, UX, Visual, Interaction)</p>
+                        <p>Finance Experts (FP&A, financial modeling & valuation, fundraising, market research, pricing analysis, etc.)</p>
+                        <p>Project Managers (digital project manager, technical project manager, scrum master, etc.)
+                        </p>
+                        <p class="mb-5">Product Managers (product owners, technical product managers, product consultants, etc.)</p>
+                        <a class="btn_service btn-primary m-auto" href="signup.html">Hire Now</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="footer_hiring">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer_hiring_content col-md-8">
+                        <h2 class="title">Get hired NOW </h2>
+                        <p>
+                            Nunc mattis feugiat ex scelerisque congue. Content for SEO purposes.</p>
+                        <div class="btn_wrapper">
+                            <a class="btn_service btn-primary" href="signup.html">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <section class="footer_section">
@@ -329,6 +362,8 @@
             $('[data-toggle="offcanvas"]').click(function() {
                 $('#wrapper').toggleClass('toggled');
             });
+
+
         });
     </script>
 
