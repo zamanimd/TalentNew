@@ -36,9 +36,9 @@
     font-size: 46px;
     color: #ebedf1;
     text-shadow: 0 0 50px #021a32;
-    text-align: left;
+    text-align: center;
     letter-spacing: 0px;
-    width: 580px;
+    /* width: 580px; */
 }
 
 .inner_banner p {
@@ -333,8 +333,8 @@
 }
 
 .first .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
     -webkit-animation-fill-mode: forwards;
@@ -342,61 +342,61 @@
 }
 
 .second .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: .93s;
-    animation-delay: .93s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 1.13s;
+    animation-delay: 1.13s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .third .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 1.74s;
-    animation-delay: 1.74s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 1.94s;
+    animation-delay: 1.94s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .fifth .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 2.61s;
-    animation-delay: 2.61s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 2.81s;
+    animation-delay: 2.81s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .forth .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 2.61s;
-    animation-delay: 2.61s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 2.81s;
+    animation-delay: 2.81s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .forth .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
     -webkit-animation-delay: 2.61s;
-    animation-delay: 2.61s;
+    animation-delay: 2.81s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .process_page .forth .step_content {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 3.46s;
-    animation-delay: 3.46s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 3.66s;
+    animation-delay: 3.66s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .step_item .step_content h5 {
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 900;
     margin-bottom: 20px;
@@ -406,8 +406,8 @@
     margin: 10px auto 0;
     width: 95%;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 
@@ -469,8 +469,8 @@
 /*#endregion*/
 
 ._2qGKqRqZ ._1P9Tvb24:first-child ._2ecxW5_b {
-    -webkit-animation: _3OLpik2C .15s;
-    animation: _3OLpik2C .15s;
+    -webkit-animation: _3OLpik2C .35s;
+    animation: _3OLpik2C .35s;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
     -webkit-animation-fill-mode: forwards;
@@ -478,19 +478,19 @@
 }
 
 ._2qGKqRqZ ._1P9Tvb24:first-child ._1TA7PM5e {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: .45s;
-    animation-delay: .45s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: .65s;
+    animation-delay: .65s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:first-child .p0URF4Wy {
-    -webkit-animation: tnt6E2os .12s;
-    animation: tnt6E2os .12s;
-    -webkit-animation-delay: .87s;
-    animation-delay: .87s;
+    -webkit-animation: tnt6E2os .32s;
+    animation: tnt6E2os .32s;
+    -webkit-animation-delay: 1.07s;
+    animation-delay: 1.07s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
@@ -501,28 +501,28 @@
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(2) ._2ecxW5_b {
-    -webkit-animation: _3OLpik2C .15s;
-    animation: _3OLpik2C .15s;
-    -webkit-animation-delay: 1.17s;
-    animation-delay: 1.17s;
+    -webkit-animation: _3OLpik2C .35s;
+    animation: _3OLpik2C .35s;
+    -webkit-animation-delay: 1.37s;
+    animation-delay: 1.37s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(2) ._1TA7PM5e {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 1.32s;
-    animation-delay: 1.32s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 1.52s;
+    animation-delay: 1.52s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(2) .p0URF4Wy {
-    -webkit-animation: tnt6E2os .12s;
-    animation: tnt6E2os .12s;
-    -webkit-animation-delay: 1.74s;
-    animation-delay: 1.74s;
+    -webkit-animation: tnt6E2os .32s;
+    animation: tnt6E2os .32s;
+    -webkit-animation-delay: 1.94s;
+    animation-delay: 1.94s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
@@ -533,28 +533,28 @@
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(3) ._2ecxW5_b {
-    -webkit-animation: _3OLpik2C .15s;
-    animation: _3OLpik2C .15s;
-    -webkit-animation-delay: 2.04s;
-    animation-delay: 2.04s;
+    -webkit-animation: _3OLpik2C .35s;
+    animation: _3OLpik2C .35s;
+    -webkit-animation-delay: 2.24s;
+    animation-delay: 2.24s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(3) ._1TA7PM5e {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 2.19s;
-    animation-delay: 2.19s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 2.39s;
+    animation-delay: 2.39s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(3) .p0URF4Wy {
-    -webkit-animation: tnt6E2os .12s;
-    animation: tnt6E2os .12s;
-    -webkit-animation-delay: 2.61s;
-    animation-delay: 2.61s;
+    -webkit-animation: tnt6E2os .32s;
+    animation: tnt6E2os .32s;
+    -webkit-animation-delay: 2.81s;
+    animation-delay: 2.81s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
@@ -565,28 +565,28 @@
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(4) ._2ecxW5_b {
-    -webkit-animation: _3OLpik2C .15s;
-    animation: _3OLpik2C .15s;
-    -webkit-animation-delay: 2.91s;
-    animation-delay: 2.91s;
+    -webkit-animation: _3OLpik2C .35s;
+    animation: _3OLpik2C .35s;
+    -webkit-animation-delay: 3.11s;
+    animation-delay: 3.11s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(4) ._1TA7PM5e {
-    -webkit-animation: qDI0Ujkt .42s;
-    animation: qDI0Ujkt .42s;
-    -webkit-animation-delay: 3.06s;
-    animation-delay: 3.06s;
+    -webkit-animation: qDI0Ujkt .62s;
+    animation: qDI0Ujkt .62s;
+    -webkit-animation-delay: 3.26s;
+    animation-delay: 3.26s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
 
 ._2qGKqRqZ ._1P9Tvb24:nth-child(4) .p0URF4Wy {
-    -webkit-animation: tnt6E2os .12s;
-    animation: tnt6E2os .12s;
-    -webkit-animation-delay: 3.48s;
-    animation-delay: 3.48s;
+    -webkit-animation: tnt6E2os .32s;
+    animation: tnt6E2os .32s;
+    -webkit-animation-delay: 3.68s;
+    animation-delay: 3.68s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
 }
@@ -657,3 +657,26 @@
         transform: translateY(0)
     }
 }
+
+
+/*#region section_title*/
+
+.section_title {
+    margin-top: 70px;
+}
+
+.section_title h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 33px;
+}
+
+.section_title p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+/*endregion*/
