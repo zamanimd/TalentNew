@@ -10,13 +10,13 @@
 
 .title_about span {
     margin-bottom: 15px;
-    color: var(--blue);
+    color: var(--green);
     font-size: 23px;
     display: block;
 }
 
 .title_about h2 {
-    color: var(--default);
+    color: var(--dark-blue);
     font-size: 37px;
     display: block;
     text-transform: uppercase;
@@ -144,8 +144,9 @@
 }
 
 .TalentHut_box_a:hover .btn-primary {
-    /* background: var(--dark-blue); */
+    background: var(--dark-blue);
     color: #fff;
+    border-color: var(--dark-blue);
 }
 
 .TalentHut_box_a:hover .btn-primary:before,
