@@ -57,7 +57,10 @@
     color: #FCD057;
 }
 
+
 /*#region reset*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -152,6 +155,7 @@ video {
     vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -195,12 +199,14 @@ table {
     border-spacing: 0;
 }
 
+
 /*#endregion reset*/
 
 *:focus {
     outline: none !important;
     box-shadow: unset !important;
 }
+
 
 /*#region form*/
 
@@ -231,6 +237,7 @@ table {
     margin-right: 8px;
 }
 
+
 /*#endregion*/
 
 body,
@@ -243,7 +250,7 @@ body {
     /* font-family: 'Roboto Condensed', sans-serif; */
     font-size: 16px;
     line-height: 1;
-    color: #515253;
+    color: #171717;
     background-color: #fff;
     position: relative;
     overflow-x: hidden;
@@ -257,14 +264,15 @@ a {
     text-decoration: none
 }
 
+
 /*#region btn-primary */
 
 .btn-primary {
     position: relative;
-    background:#fff;
+    background: #fff;
     color: var(--dark-blue);
-    transition: 0.3s; 
-    border:3px solid var(--dark-blue);
+    transition: 0.3s;
+    border: 3px solid var(--dark-blue);
 }
 
 .btn-primary:hover {
@@ -281,7 +289,10 @@ a {
     background-color: var(--dark-blue);
 }
 
+
 /*#endregion */
+
+
 /*#region menu*/
 
 .menu ul {
@@ -296,20 +307,21 @@ a {
 }
 
 .menu li a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     color: var(--dark-blue);
     padding: 21px 12px;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     height: 100%;
-    font-weight: 300
+    font-weight: 500
 }
 
 .menu li a:after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0.5px;
+    bottom: 0px;
     background: transparent;
     height: 3px;
     transform: translateX(-50%);
@@ -333,8 +345,8 @@ a {
 
 .login_link span {
     display: block;
-    font-size: 11px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--dark-blue)
 }
@@ -346,11 +358,11 @@ a {
 .top_menu {
     border-bottom: 1px solid #bbb;
     padding: 0px 0;
-    height: 57px;
+    height: 63px;
 }
 
 .logo {
-    width: 140px;
+    /* width: 140px; */
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -368,13 +380,15 @@ a {
     .logo {
         width: 150px;
     }
-
     .top_menu {
         height: 62px;
     }
 }
 
+
 /*#endregion*/
+
+
 /*#region menu responsive*/
 
 .hamburger_menu,
@@ -393,16 +407,13 @@ a {
     .menu {
         display: none
     }
-
     #sidebar-wrapper {
         display: block;
     }
-
     .hamburger_menu {
         display: block;
         position: relative;
     }
-
     .hamburger_menu::after {
         content: '';
         display: block;
@@ -413,16 +424,13 @@ a {
         background: #bbb;
         left: 0px;
     }
-
     .top_menu .container {
         width: 100%;
         max-width: 100%;
     }
-
     .top_menu {
         height: 62px;
     }
-
     /*-------------------------------*/
     /*           Wrappers            */
     /*-------------------------------*/
@@ -433,11 +441,9 @@ a {
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
     }
-
     #wrapper.toggled {
         padding-right: 220px;
     }
-
     #sidebar-wrapper {
         z-index: 1000;
         right: 220px;
@@ -452,32 +458,26 @@ a {
         -o-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
     }
-
     #sidebar-wrapper::-webkit-scrollbar {
         display: none;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         width: 220px;
     }
-
     #page-content-wrapper {
         width: 100%;
     }
-
     #wrapper.toggled #page-content-wrapper {
         position: absolute;
         margin-left: -220px;
         transition: all 0.4s ease-out;
     }
-
     /*-------------------------------*/
     /*     Sidebar nav styles        */
     /*-------------------------------*/
     .navbar {
         padding: 0;
     }
-
     .sidebar-nav {
         position: absolute;
         top: 0;
@@ -486,21 +486,18 @@ a {
         padding: 0;
         list-style: none;
     }
-
     .sidebar-nav li {
         position: relative;
         line-height: 20px;
         display: inline-block;
         width: 100%;
     }
-
     .sidebar-nav li a {
         display: block;
         color: #ddd;
         text-decoration: none;
         padding: 10px 15px 10px 30px;
     }
-
     .sidebar-nav li a:hover,
     .sidebar-nav li a:active,
     .sidebar-nav li a:focus,
@@ -511,7 +508,6 @@ a {
         text-decoration: none;
         background-color: transparent;
     }
-
     /*-------------------------------*/
     /*       Hamburger-Cross         */
     /*-------------------------------*/
@@ -528,13 +524,11 @@ a {
         right: 0;
         margin: auto;
     }
-
     .hamburger:hover,
     .hamburger:focus,
     .hamburger:active {
         outline: none;
     }
-
     .hamburger.is-closed:before {
         content: '';
         display: block;
@@ -547,14 +541,12 @@ a {
         -webkit-transform: translate3d(0, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-closed:hover:before {
         opacity: 1;
         display: block;
         -webkit-transform: translate3d(-100px, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-closed .hamb-top,
     .hamburger.is-closed .hamb-middle,
     .hamburger.is-closed .hamb-bottom,
@@ -566,64 +558,52 @@ a {
         height: 4px;
         width: 100%;
     }
-
     .hamburger.is-closed .hamb-top,
     .hamburger.is-closed .hamb-middle,
     .hamburger.is-closed .hamb-bottom {
         background-color: #1a1a1a;
     }
-
     .hamburger.is-closed .hamb-top {
         top: 5px;
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-closed .hamb-middle {
         top: 50%;
         margin-top: -2px;
     }
-
     .hamburger.is-closed .hamb-bottom {
         bottom: 5px;
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-closed:hover .hamb-top {
         top: 0;
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-closed:hover .hamb-bottom {
         bottom: 0;
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-open .hamb-top,
     .hamburger.is-open .hamb-middle,
     .hamburger.is-open .hamb-bottom {
         background-color: #1a1a1a;
     }
-
     .hamburger.is-open .hamb-top,
     .hamburger.is-open .hamb-bottom {
         top: 50%;
         margin-top: -2px;
     }
-
     .hamburger.is-open .hamb-top {
         -webkit-transform: rotate(45deg);
         -webkit-transition: -webkit-transform .35s cubic-bezier(.73, 1, .28, .08);
     }
-
     .hamburger.is-open .hamb-middle {
         display: none;
     }
-
     .hamburger.is-open .hamb-bottom {
         -webkit-transform: rotate(-45deg);
         -webkit-transition: -webkit-transform .35s cubic-bezier(.73, 1, .28, .08);
     }
-
     .hamburger.is-open:before {
         content: '';
         display: block;
@@ -636,19 +616,16 @@ a {
         -webkit-transform: translate3d(0, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
-
     .hamburger.is-open:hover:before {
         opacity: 1;
         display: block;
         -webkit-transform: translate3d(-100px, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
-
     .fixed-top {
         right: 0;
         left: auto;
     }
-
     .overlay {
         width: 100%;
         height: 100%;
@@ -661,7 +638,10 @@ a {
     }
 }
 
+
 /*#endregion*/
+
+
 /*#region banner*/
 
 .banner {
@@ -741,7 +721,7 @@ a {
 
 .btn_service {
     display: block;
-    padding: 12px 40px;
+    padding: 13px 40px;
     font-size: 18px;
     line-height: 1.33333;
     border-radius: 0px;
@@ -749,8 +729,39 @@ a {
     text-transform: uppercase;
     font-weight: 500;
     position: relative;
-    color: var(--dark-blue);
-    border:3px solid var(--dark-blue);
+    background: var(--dark-blue);
+    color: #fff;
+    border-color: var(--dark-blue);
+    border: 0
+}
+
+.banner_content .btn_service {
+    background: var(--dark-blue);
+    color: #fff;
+    border-color: var(--dark-blue);
+    border: 0
+}
+
+.btn_service:after {
+    content: '';
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-color: var(--dark-blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.btn_service:hover::after {
+    transform: scale(1);
+    opacity: 1;
+    border-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 @media screen and (max-width:1200px) {
@@ -762,20 +773,21 @@ a {
         position: absolute;
         top: 61px;
     }
-
     .hero-video:before {
         content: '';
         height: calc(100vh - 61px);
         top: 61px;
         z-index: -1;
     }
-
     .banner h1 {
         font-size: 0.3em;
     }
 }
 
+
 /*#endregion*/
+
+
 /*#region tek-card*/
 
 .tek-card {
@@ -917,6 +929,7 @@ a {
     transform: scale(1.25, 1.25) translate(-40%, 0%);
 }
 
+
 /*#endregion*/
 
 .title h2 {
@@ -938,6 +951,7 @@ a {
     display: block;
     font-size: 1.5rem;
 }
+
 
 /*#region hiring*/
 
@@ -971,7 +985,10 @@ a {
 }
 
 .hiring_content .btn_service {
-    width: 170px;
+    width: 160px;
+    background: var(--dark-blue);
+    color: #fff;
+    border-color: var(--dark-blue);
 }
 
 h2.title {
@@ -998,11 +1015,14 @@ h2.title {
     font-weight: 600;
     line-height: 1.5em;
     font-family: 'Roboto Condensed', sans-serif;
-    color: var(--dark-blue);   
+    color: var(--dark-blue);
     margin-top: 25px;
 }
 
+
 /*#endregion*/
+
+
 /*#region signup_section*/
 
 .signup_section {
@@ -1073,7 +1093,10 @@ h2.title {
     margin-top: 0;
 }
 
+
 /*#endregion*/
+
+
 /*#region professionals*/
 
 .professionals {
@@ -1142,7 +1165,10 @@ h2.title {
     border-bottom: 1px solid #d5d8dc;
 }
 
+
 /*#endregion*/
+
+
 /*#region footer_hiring*/
 
 .footer_hiring {
@@ -1159,13 +1185,13 @@ h2.title {
 .footer_hiring_content .btn_service {
     width: 40%;
     margin: auto;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     background: transparent;
     color: #fff;
+}
 
-}.footer_hiring_content .btn_service:hover {
-   
-    border: 3px solid var(--dark-blue);
+.footer_hiring_content .btn_service:hover {
+    border: 2px solid var(--dark-blue);
     background: #fff;
     color: var(--dark-blue);
 }
@@ -1179,12 +1205,17 @@ h2.title {
 
 .footer_hiring_content p {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
 }
 
+
 /*#endregion*/
+
+
 /*#region footer*/
+
+
 /*#region footer*/
 
 .footer_section {
@@ -1326,8 +1357,13 @@ h2.title {
     display: inline-block
 }
 
+
 /*#endregion*/
+
+
 /*#endregion*/
+
+
 /*#region dropdoen in menu*/
 
 .dropbtn {
@@ -1335,32 +1371,40 @@ h2.title {
     color: var(--dark-blue);
     border: none;
     padding: 21px 12px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 57px;
+    top: 63px;
 }
 
 .dropdown-content a {
     color: var(--dark-blue);
-    padding: 12px 16px;
+    padding: 10px 20px;
     text-decoration: none;
     display: block;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dropdown-content a:first-of-type {
+    margin-top: 15px;
+}
+
+.dropdown-content a:last-of-type {
+    margin-bottom: 15px;
 }
 
 .dropdown-content a:hover {
@@ -1381,7 +1425,7 @@ h2.title {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 1px;
+    bottom: 0px;
     background: transparent;
     height: 3px;
     transform: translateX(-50%);
@@ -1389,5 +1433,6 @@ h2.title {
     transition: all .25s ease-in-out;
     width: 0;
 }
+
 
 /*#endregion*/

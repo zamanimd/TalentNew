@@ -1,6 +1,6 @@
 .about_first {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 70px;
+    padding-bottom: 0px;
     flex-wrap: wrap-reverse;
 }
 
@@ -28,22 +28,42 @@
 .about_first p {
     font-size: 18px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     line-height: 27px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.about_first .images_wrapper {
+    padding-left: 53px;
+}
+
+.about_second .images_wrapper {
+    padding-right: 53px;
 }
 
 .images_wrapper {
     position: relative;
     height: 100%;
+    width: 100%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
-.about_first .images_wrapper img:last-of-type {
+.images_wrapper img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* .about_first .images_wrapper img:last-of-type {
     position: absolute;
     bottom: -20%;
     left: 61%;
-}
+} */
 
 .about_second {
     padding-top: 60px;
@@ -55,7 +75,7 @@
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 27px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 30px;
 }
 
@@ -65,22 +85,48 @@
     right: 0;
 } */
 
-.about_second .images_wrapper img:last-of-type {
+
+/* .about_second .images_wrapper img:last-of-type {
     position: absolute;
     bottom: -40px;
     left: -15px;
-}
+} */
 
 .btn_service_small {
     display: block;
-    padding: 15px 6px 12px;
+    padding: 17px 6px;
     font-size: 16px;
+    line-height: 14px;
     border-radius: 0px;
     width: 160px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
     margin: auto;
+    background: var(--dark-blue);
+    color: #fff;
+    border: 0;
+}
+
+.btn_service_small:after {
+    content: '';
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-color: var(--dark-blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.btn_service_small:hover::after {
+    transform: scale(1);
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 
@@ -135,7 +181,7 @@
     margin-bottom: 70px;
     font-size: 1.2rem;
     line-height: 26px;
-    font-weight: 300;
+    font-weight: 400;
     color: #333;
 }
 
@@ -143,11 +189,13 @@
     float: right;
 }
 
+
+/* 
 .TalentHut_box_a:hover .btn-primary {
     background: var(--dark-blue);
     color: #fff;
     border-color: var(--dark-blue);
-}
+} */
 
 .TalentHut_box_a:hover .btn-primary:before,
 .TalentHut_box_a:hover .btn-primary:after {
@@ -163,10 +211,10 @@
 }
 
 .TalentHut_box_a:hover .btn-primary:after {
-    border-bottom-color: var(--dark-blue);
-    border-left-color: var(--dark-blue);
-    -webkit-transition: border-color 0s ease-out .25s, width .125s ease-out .25s, height .125s ease-out .3s;
-    transition: border-color 0s ease-out .25s, width .125s ease-out .25s, height .125s ease-out .3s
+    transform: scale(1);
+    opacity: 1;
+    border-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .TalentHut_box_a:hover img {
