@@ -51,8 +51,7 @@
                             </div>
                         </div>
                         <div class="hamburger_menu col-lg-1 col-2 col-sm-1">
-                            <button type="button" class="hamburger animated fadeInLeft is-closed"
-                                data-toggle="offcanvas">
+                            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
                                 <span class="hamb-top"></span>
                                 <span class="hamb-middle"></span>
                                 <span class="hamb-bottom"></span>
@@ -103,23 +102,10 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- <section class="inner_banner">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8">
-                        <h2>TalentHut's Managed Solutions</h2>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section class="inner_banner">
-            <div class="hero-video" data-autoplay="true" data-loop="True" data-wf-ignore="true"
-                data-video-urls="https://ak.picdn.net/shutterstock/videos/1063137853/preview/stock-footage-indian-ethnicity-s-confident-female-applicant-passing-job-interview-finish-formal-appointment.webm"
+            <div class="hero-video" data-autoplay="true" data-loop="True" data-wf-ignore="true" data-video-urls="https://ak.picdn.net/shutterstock/videos/1063137853/preview/stock-footage-indian-ethnicity-s-confident-female-applicant-passing-job-interview-finish-formal-appointment.webm"
                 id="#">
-                <video autoplay="" id="video-viewport" muted="" playsinline="" data-wf-ignore="true"
-                    data-object-fit="cover" loop="">
+                <video autoplay="" id="video-viewport" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover" loop="">
                     <source src="assets/video/managed-solutions.mp4" data-wf-ignore="true">
                 </video>
             </div>
@@ -137,9 +123,18 @@
             <div class="container">
                 <div class="row about_first pt-5">
                     <div class="col-12 col-md-12">
-                        <div class="images_wrapper">
-                            <img src="assets/images/services/managed-soulutions.png" alt="" width="450">
-                            <!-- <img class="img-responsive" src="assets/images/about-us-s.png" alt=""> -->
+                        <div class="group_images">
+                            <img class="circle" src="assets/images/services/managed/circle.png" alt="">
+                            <div>
+                                <img class="middle" src="assets/images/services/managed/middle.png" alt="">
+
+                                <div class="arrows">
+                                    <img class="onegray" src="assets/images/services/managed/grayleft.png" alt="">
+                                    <img class="twored" src="assets/images/services/managed/redright.png" alt="">
+                                    <img class="threeblue" src="assets/images/services/managed/blueright.png" alt="">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -152,16 +147,12 @@
             <div class="container">
                 <div class="row about_p">
                     <div class="col-12 col-md-12">
-                        <p class="mb-3">When it comes Managed Solutions, we provides a unique, flexible delivery model
-                            to help you address short-term skill gaps, deliver project results and transform your
-                            organization by creating the right team that can scale up or down
+                        <p class="mb-3">When it comes Managed Solutions, we provides a unique, flexible delivery model to help you address short-term skill gaps, deliver project results and transform your organization by creating the right team that can scale up or down
                             quickly and cost effectively to fit your needs.</p>
                         <p>By opting for our Managed Solutions teams, you benefit from:</p>
                         <ul>
-                            <li>Access to the right talent at the right time with a custom-built team of specialists and
-                                support professionals</li>
-                            <li>Cost efficiencies through the ability to scale up or down as needed or to outsource a
-                                function completely</li>
+                            <li>Access to the right talent at the right time with a custom-built team of specialists and support professionals</li>
+                            <li>Cost efficiencies through the ability to scale up or down as needed or to outsource a function completely</li>
                             <li>Integration of consulting, operations and technology implementation</li>
                             <li>Experienced subject matter experts for unique and complex issues, on demand</li>
                             <li>Bandwidth to prevent burdening full-time employees to deliver on your key initiatives
@@ -197,8 +188,7 @@
                         <div class="footer_about_us">
                             <img src="assets/images/talentHutLogo.png" />
                             <p>
-                                lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra.lorem ipsum dolor
-                                sit amet, consectetur adipiscing elit. Duis viverra.
+                                lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra.lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra.
 
                             </p>
                         </div>
@@ -342,15 +332,15 @@
     <script src='assets/js/jquery-3.6.0.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             var trigger = $('.hamburger'),
                 overlay = $('.overlay'),
                 isClosed = false;
 
-            trigger.click(function () {
+            trigger.click(function() {
                 hamburger_cross();
             });
-            overlay.click(function () {
+            overlay.click(function() {
                 hamburger_cross();
             });
 
@@ -369,7 +359,7 @@
                 }
             }
 
-            $('[data-toggle="offcanvas"]').click(function () {
+            $('[data-toggle="offcanvas"]').click(function() {
                 $('#wrapper').toggleClass('toggled');
             });
 
