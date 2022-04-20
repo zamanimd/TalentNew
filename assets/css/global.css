@@ -1241,14 +1241,12 @@ h2.title {
 
 .footer_about_us img {
     margin-bottom: 20px;
-    width: 80%;
 }
 
 .footer_about_us p {
     margin-bottom: 20px;
     color: #fff;
     line-height: 25px;
-    font-weight: lighter;
 }
 
 .footer_quick_link {
@@ -1320,22 +1318,29 @@ h2.title {
     margin-bottom: 20px;
 }
 
-.footer_latest_update .footer_latest_update_item img {
+.footer_latest_update .footer_news_image {
     width: 70px;
-    height: 70px;
     margin-right: 20px;
 }
 
+.footer_latest_update .footer_latest_update_item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .footer_latest_update .footer_latest_update_content span {
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
 }
 
 .footer_latest_update .footer_latest_update_content a {
-    transition: 0.3s;
-    transition: 0.3s;
-    margin-bottom: 12px;
+    transition: 0.2s;
+    margin-bottom: 16px;
     display: block;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .footer_latest_update .footer_latest_update_content a:hover {
@@ -1347,14 +1352,59 @@ h2.title {
 }
 
 .footer_bottom {
-    background-color: var(--default);
+    background-color: #000;
     padding: 15px;
     color: #ccc;
-    font-weight: lighter
+    text-align: center;
+}
+
+.footer-social-links {
+    /* text-align: center; */
+    padding-top: 20px;
+}
+
+.footer-social-link {
+    color: #f8f8f8;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
 }
 
 .footer-social-links li {
     display: inline-block
+}
+
+.footer_bottom a {
+    margin: 0 10px;
+    font-size: 13px;
+    color: #ccc;
+    position: relative;
+}
+
+.footer_bottom a:hover {
+    color: var(--blue);
+}
+
+.footer_bottom p {
+    font-size: 13px;
+}
+
+.footer_bottom a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    background: transparent;
+    height: 2px;
+    transform: translateX(-50%);
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    width: 0;
+}
+
+.footer_bottom a:hover:after {
+    width: 100%;
+    background: var(--blue);
 }
 
 
@@ -1432,6 +1482,25 @@ h2.title {
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     width: 0;
+}
+
+.submenu-active {
+    color: var(--green) !important;
+}
+
+.text-justify{
+    text-align:justify;
+}
+
+@media (min-width:1300px) {
+    
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1240px
+    }
 }
 
 
