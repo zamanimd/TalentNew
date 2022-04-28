@@ -10,9 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
@@ -26,9 +24,20 @@
             <ul class="nav sidebar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="why-talent-hut.html">Why TalentHut</a></li>
+                <li><span class="drop_service">Services</span>
+                    <div class="drop_service_content">
+                        <a href="freelancers.html">Freelancers</a>
+                        <a href="permanent-hire.html">Permanent Hire</a>
+                        <a href="contract-hire.html">Contract Hire</a>
+                        <a href="managed-soulutions.html">Manage Solutions</a>
+                    </div>
+                </li>
+
                 <li><a href="our-process.html">Our Process</a></li>
                 <li><a href="get-hired.html">Get Hired</a></li>
-                <li><a target="_blank" href="https://www.talenthut.com/login.html">Login</a></li>
+                <li><a target="_blank" href="https://www.talenthut.com/getTalent.html">Sign Up</a></li>
+                <li><a target="_blank" href="https://www.talenthut.com/getHired.html">Get Hired</a></li>
+                <li><a target="_blank" href="https://www.talenthut.com/login.html">Log in</a></li>
             </ul>
         </nav>
 
@@ -38,7 +47,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-11 col-xl-3 col-10 col-sm-11">
+                        <div class="col-lg-11 col-xl-2 col-10 col-sm-11">
                             <div class="logo">
                                 <a href="index.html">
                                     <img src="assets/images/talentHutLogo.png" alt="logo" />
@@ -46,15 +55,14 @@
                             </div>
                         </div>
                         <div class="hamburger_menu col-lg-1 col-2 col-sm-1">
-                            <button type="button" class="hamburger animated fadeInLeft is-closed"
-                                data-toggle="offcanvas">
+                            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
                                 <span class="hamb-top"></span>
                                 <span class="hamb-middle"></span>
                                 <span class="hamb-bottom"></span>
                             </button>
                         </div>
 
-                        <div class="col-xl-8 menu">
+                        <div class="col-xl-6 menu">
                             <ul>
                                 <li>
                                     <a href="index.html" class="active">
@@ -87,12 +95,24 @@
                                         Get Hired
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
-                        <div class="col-xl-1 login_wrapp">
+                        <div class="col-xl-4 shortcutlink_wrapp">
+                            <a target="_blank" href="https://www.talenthut.com/getTalent.html" class="shortcut_link">
+                                Sign up
+                            </a>
+
+                            <a target="_blank" href="https://www.talenthut.com/getHired.html" class="shortcut_link get_hired">
+                               Get Hired
+                            </a>
+                            <!-- 
                             <a target="_blank" href="https://www.talenthut.com/login.html" class="login_link">
                                 <img src="assets/images/icon/user.png" />
                                 <span>Log in</span>
+                            </a> -->
+                            <a target="_blank" href="https://www.talenthut.com/login.html" class="shortcut_link">
+                                Log in
                             </a>
                         </div>
                     </div>
@@ -102,11 +122,8 @@
 
 
         <section class="banner">
-            <div class="hero-video" data-autoplay="true" data-loop="True" data-wf-ignore="true"
-                data-video-urls="assets/video/index.mov"
-                id="#">
-                <video autoplay="" id="video-viewport" muted="" playsinline="" data-wf-ignore="true"
-                    data-object-fit="cover" loop="">
+            <div class="hero-video" data-autoplay="true" data-loop="True" data-wf-ignore="true" data-video-urls="assets/video/index.mov" id="#">
+                <video autoplay="" id="video-viewport" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover" loop="">
                     <source src="assets/video/index.mov" data-wf-ignore="true">
                 </video>
             </div>
@@ -138,7 +155,7 @@
                             Our Services
                         </h2>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <a href="freelancers.html" class="teck_card_link">
                             <div class="tek-card fit-3">
                                 <!-- <img src="assets/images/services/service_1.jpg" alt="Freelancers"> -->
@@ -151,7 +168,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <a href="permanent-hire.html" class="teck_card_link">
                             <div class="tek-card fit-3">
                                 <!-- <img src="assets/images/services/service_1.jpg" alt="Permanent Hire"> -->
@@ -164,7 +181,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <a href="contract-hire.html" class="teck_card_link">
                             <div class="tek-card fit-3">
                                 <!-- <img src="assets/images/services/service_3.jpg" alt="Contract Hire"> -->
@@ -177,7 +194,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <a href="managed-soulutions.html" class="teck_card_link">
                             <div class="tek-card fit-3">
                                 <!-- <img src="assets/images/services/service_4.jpg" alt="Managed Solutions"> -->
@@ -201,8 +218,7 @@
                         <h2 class="title">
                             Currently Hiring?
                         </h2>
-                        <p class="text_green">The hiring process is made simple for you. We help you assemble a
-                            world-class team,on your terms.
+                        <p class="text_green">The hiring process is made simple for you. We help you assemble a world-class team,on your terms.
                         </p>
                         <p>Because, the best deserve the best.</p>
                     </div>
@@ -213,26 +229,25 @@
         <section class="signup_section">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="hiring_content col-md-6">
+                    <div class="hiring_content col-12 col-sm-6 col-md-6">
                         <h2 class="title">
                             Build a team, that will help you win.
                         </h2>
                         <div class="btn_wrapper">
-                            <a target="_blank" class="btn_service btn-primary m-auto"
-                                href="https://www.talenthut.com/getTalent.html"> Sign
+                            <a target="_blank" class="btn_service btn-primary m-auto" href="https://www.talenthut.com/getTalent.html"> Sign
                                 Up</a>
                         </div>
                     </div>
-                    <div class="col-md-6 p-0">
+                    <div class="col-12 col-sm-6 col-md-6 p-0">
                         <div class="shape_wrapper">
-                            <img src="assets/images/team-index.jpg">
+                            <!-- <img src="assets/images/team-index.jpg"> -->
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
-        
+
         <section class="professionals">
             <div class="container">
                 <div class="row">
@@ -241,34 +256,31 @@
                             Professionals we offer
                         </h2>
                     </div>
-                    <div class="row">
-                        <div class="col-6 col-md-4 pro_item">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12 col-sm-6  col-md-4 pro_item">
                             <a href="developers.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/developer-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/developer-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">Developers</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-6 col-md-4 pro_item">
+                        <div class="col-12 col-sm-6  col-md-4 pro_item">
                             <a href="product-managers.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/product-manager-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/product-manager-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">Product Managers</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-6 col-md-4 pro_item">
+                        <div class="col-12 col-sm-6  col-md-4 pro_item">
                             <a href="project-managers.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/project-manager-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/project-manager-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">Project Managers</p>
@@ -276,35 +288,32 @@
                             </a>
                         </div>
 
-                    </div>
-                    <div class="row add_border">
-                        <div class="col-6 col-md-4 pro_item">
+                        <!-- </div>
+                    <div class="d-flex flex-wrap add_border"> -->
+                        <div class="col-12 col-sm-6  col-md-4 pro_item add_border border_left">
                             <a href="ai-ml-experts.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/aiml-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/aiml-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">AI / ML experts</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-6 col-md-4 pro_item">
+                        <div class="col-12 col-sm-6  col-md-4 pro_item add_border">
                             <a href="cloud-security-experts.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/cloud-security-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/cloud-security-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">Cloud Security Experts</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-6 col-md-4 pro_item">
+                        <div class="col-12 col-sm-6  col-md-4 pro_item add_border ">
                             <a href="data-scintists.html">
                                 <figure>
-                                    <img class="img-responsive ph-image iconImg au-target"
-                                        src="assets/images/logo/data-scientist-logo-gr.png" width="100">
+                                    <img class="img-responsive ph-image iconImg au-target" src="assets/images/logo/data-scientist-logo-gr.png" width="100">
                                 </figure>
                                 <div class="category_info text-center">
                                     <p class="mb-1">Data Scientists</p>
@@ -327,8 +336,7 @@
                             Let your dream take flight. Reach out Today.
                         </p>
                         <div class="btn_wrapper">
-                            <a target="_blank" class="btn_service btn-primary"
-                                href="https://www.talenthut.com/getHired.html">Join our network</a>
+                            <a target="_blank" class="btn_service btn-primary" href="https://www.talenthut.com/getHired.html">Join our network</a>
                         </div>
                     </div>
                 </div>
@@ -339,22 +347,20 @@
         <section class="footer_section">
             <div class="container">
                 <div class="row mb-5">
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_about_us">
                             <img src="assets/images/talentHutLogoBig.png" />
-                            <p class="text-justify">
-                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
-                                IT professionals you need.
+                            <p>
+                                TalentHut finds, verifies, and hand-matches you with the highly-skilled IT professionals you need.
                             </p>
-                            <p class="text-justify">
-                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
-                                freelance IT professionals you need.
+                            <p>
+                                TalentHut finds, verifies, and hand-matches you with the highly-skilled freelance IT professionals you need.
                             </p>
 
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_quick_link">
                             <h3>Quick Links</h3>
                             <ul>
@@ -387,9 +393,9 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_quick_link">
-                            <h3>Services</h3>
+                            <h3 class="footer_services_header">Services</h3>
                             <ul>
                                 <li>
                                     <a href="index.html">
@@ -421,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_contact">
                             <h3>Contact Info</h3>
                             <div class="footer_contact_item mb-3">
@@ -434,11 +440,9 @@
                                 <div class="footer_latest_update_content">
                                     <ul class="footer-social-links">
                                         <li>
-                                            <a target="_blank"
-                                                href="https://www.linkedin.com/company/talenthut-on-demand">
+                                            <a target="_blank" href="https://www.linkedin.com/company/talenthut-on-demand">
 
-                                                <svg class="footer-social-link" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                <svg class="footer-social-link" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                     <path
                                                         d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                                                 </svg>
@@ -468,22 +472,22 @@
             </div>
         </section>
 
-        
+
     </div>
 
 
     <script src='assets/js/jquery-3.6.0.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             var trigger = $('.hamburger'),
                 overlay = $('.overlay'),
                 isClosed = false;
 
-            trigger.click(function () {
+            trigger.click(function() {
                 hamburger_cross();
             });
-            overlay.click(function () {
+            overlay.click(function() {
                 hamburger_cross();
             });
 
@@ -502,9 +506,14 @@
                 }
             }
 
-            $('[data-toggle="offcanvas"]').click(function () {
+            $('[data-toggle="offcanvas"]').click(function() {
                 $('#wrapper').toggleClass('toggled');
             });
+
+            $(".drop_service").click(function() {
+                $(".drop_service_content").toggle();
+
+            })
         });
     </script>
 

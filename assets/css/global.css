@@ -57,6 +57,10 @@
     color: #FCD057;
 }
 
+.border_left {
+    border-left: 1px solid #d5d8dc;
+}
+
 
 /*#region reset*/
 
@@ -336,14 +340,14 @@ a {
     background: var(--green);
 }
 
-.login_wrapp {
+.shortcutlink_wrapp {
     display: flex;
     justify-content: end;
     align-items: center;
     text-align: center;
 }
 
-.login_link span {
+.shortcutlink_wrapp span {
     display: block;
     font-size: 12px;
     font-weight: 500;
@@ -351,8 +355,51 @@ a {
     color: var(--dark-blue)
 }
 
-.login_link img {
+.shortcutlink_wrapp img {
     margin-bottom: 3px;
+}
+
+.shortcutlink_wrapp .shortcut_link {
+    color: var(--dark-blue);
+    font-size: 15px !important;
+    position: relative;
+    font-weight: 500;
+    margin-right: 12px;
+    padding: 8px 10px;
+}
+
+.shortcutlink_wrapp .shortcut_link:hover {
+    color: var(--green);
+}
+
+.get_hired {
+    background: var(--light-blue);
+    color: #fff !important;
+    border: 0;
+    padding: 10px 20px !important;
+    border-radius: 2px;
+}
+
+.get_hired:after {
+    content: '';
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-color: var(--dark-blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.get_hired:hover::after {
+    transform: scale(1);
+    opacity: 1;
+    border-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .top_menu {
@@ -407,8 +454,26 @@ a {
     .menu {
         display: none
     }
+    .shortcutlink_wrapp {
+        display: none
+    }
     #sidebar-wrapper {
         display: block;
+    }
+    .drop_service {
+        display: block;
+        color: #ddd;
+        text-decoration: none;
+        padding: 10px 15px 10px 30px;
+    }
+    .drop_service_content {
+        display: none;
+        margin-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .drop_service_content a {
+        padding: 7px 15px 7px 30px !important;
     }
     .hamburger_menu {
         display: block;
@@ -485,6 +550,7 @@ a {
         margin: 0;
         padding: 0;
         list-style: none;
+        padding-top: 25px;
     }
     .sidebar-nav li {
         position: relative;
@@ -778,9 +844,6 @@ a {
         height: calc(100vh - 61px);
         top: 61px;
         z-index: -1;
-    }
-    .banner h1 {
-        font-size: 0.3em;
     }
 }
 
@@ -1161,7 +1224,7 @@ h2.title {
     line-height: 24px;
 }
 
-.professionals .add_border .pro_item {
+.professionals .add_border {
     border-bottom: 1px solid #d5d8dc;
 }
 
@@ -1407,6 +1470,10 @@ h2.title {
     background: var(--blue);
 }
 
+.footer_services_header {
+    margin-left: -42px;
+}
+
 
 /*#endregion*/
 
@@ -1488,18 +1555,106 @@ h2.title {
     color: var(--green) !important;
 }
 
-.text-justify{
-    text-align:justify;
+.text-justify {
+    text-align: justify;
 }
 
 @media (min-width:1300px) {
-    
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
         max-width: 1240px
+    }
+}
+
+
+/*#endregion*/
+
+.signup_section .shape_wrapper {
+    background-image: url(../images/team-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+/*#region responsive*/
+
+@media screen and (max-width:768px) {
+    .banner .banner_content {
+        padding: 0px 18px;
+    }
+    .banner h1 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .banner p {
+        font-size: 19px;
+        margin: 0 auto 0px;
+        line-height: 23px;
+    }
+    .signup_section .shape_wrapper img {
+        max-width: none;
+        max-height: 100% !important;
+    }
+    .signup_section .shape_wrapper::before {
+        display: none;
+    }
+    .hiring_content {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .signup_section .shape_wrapper::before {
+        transform: rotate(-180deg);
+        content: "";
+        position: absolute;
+        background-image: url(../images/mask-white.png);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 102%;
+        left: -113px;
+        top: -7px;
+        z-index: 2;
+        background-size: cover;
+    }
+    .footer_hiring_content .btn_service {
+        width: 100%;
+    }
+    .footer_quick_link {
+        align-items: unset;
+    }
+    .professionals .pro_item:first-child {
+        border-right: 0
+    }
+    .professionals .pro_item:nth-of-type(even) {
+        border-right: 1px solid #d5d8dc;
+    }
+    .professionals .pro_item {
+        border: 1px solid #d5d8dc;
+    }
+    .professionals .pro_item:last-child {
+        border-bottom: 1px solid #d5d8dc;
+    }
+    .footer_section {
+        padding: 55px 0 0 0;
+    }
+    .footer_services_header {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .professionals .pro_item {
+        border: 1px solid #d5d8dc;
+        border-bottom: 0;
+    }
+    .professionals .pro_item:last-child {
+        border-bottom: 1px solid #d5d8dc;
     }
 }
 
