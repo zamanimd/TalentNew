@@ -61,10 +61,7 @@
     border-left: 1px solid #d5d8dc;
 }
 
-
 /*#region reset*/
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,7 +156,6 @@ video {
     vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -203,14 +199,12 @@ table {
     border-spacing: 0;
 }
 
-
 /*#endregion reset*/
 
 *:focus {
     outline: none !important;
     box-shadow: unset !important;
 }
-
 
 /*#region form*/
 
@@ -241,7 +235,6 @@ table {
     margin-right: 8px;
 }
 
-
 /*#endregion*/
 
 body,
@@ -268,7 +261,6 @@ a {
     text-decoration: none
 }
 
-
 /*#region btn-primary */
 
 .btn-primary {
@@ -293,10 +285,7 @@ a {
     background-color: var(--dark-blue);
 }
 
-
 /*#endregion */
-
-
 /*#region menu*/
 
 .menu ul {
@@ -427,15 +416,13 @@ a {
     .logo {
         width: 150px;
     }
+
     .top_menu {
         height: 62px;
     }
 }
 
-
 /*#endregion*/
-
-
 /*#region menu responsive*/
 
 .hamburger_menu,
@@ -454,31 +441,38 @@ a {
     .menu {
         display: none
     }
+
     .shortcutlink_wrapp {
         display: none
     }
+
     #sidebar-wrapper {
         display: block;
     }
+
     .drop_service {
         display: block;
         color: #ddd;
         text-decoration: none;
         padding: 10px 15px 10px 30px;
     }
+
     .drop_service_content {
         display: none;
         margin-left: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
     .drop_service_content a {
         padding: 7px 15px 7px 30px !important;
     }
+
     .hamburger_menu {
         display: block;
         position: relative;
     }
+
     .hamburger_menu::after {
         content: '';
         display: block;
@@ -489,13 +483,16 @@ a {
         background: #bbb;
         left: 0px;
     }
+
     .top_menu .container {
         width: 100%;
         max-width: 100%;
     }
+
     .top_menu {
         height: 62px;
     }
+
     /*-------------------------------*/
     /*           Wrappers            */
     /*-------------------------------*/
@@ -506,9 +503,11 @@ a {
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
     }
+
     #wrapper.toggled {
         padding-right: 220px;
     }
+
     #sidebar-wrapper {
         z-index: 1000;
         right: 220px;
@@ -523,26 +522,32 @@ a {
         -o-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
     }
+
     #sidebar-wrapper::-webkit-scrollbar {
         display: none;
     }
+
     #wrapper.toggled #sidebar-wrapper {
         width: 220px;
     }
+
     #page-content-wrapper {
         width: 100%;
     }
+
     #wrapper.toggled #page-content-wrapper {
         position: absolute;
         margin-left: -220px;
         transition: all 0.4s ease-out;
     }
+
     /*-------------------------------*/
     /*     Sidebar nav styles        */
     /*-------------------------------*/
     .navbar {
         padding: 0;
     }
+
     .sidebar-nav {
         position: absolute;
         top: 0;
@@ -552,18 +557,21 @@ a {
         list-style: none;
         padding-top: 25px;
     }
+
     .sidebar-nav li {
         position: relative;
         line-height: 20px;
         display: inline-block;
         width: 100%;
     }
+
     .sidebar-nav li a {
         display: block;
         color: #ddd;
         text-decoration: none;
         padding: 10px 15px 10px 30px;
     }
+
     .sidebar-nav li a:hover,
     .sidebar-nav li a:active,
     .sidebar-nav li a:focus,
@@ -574,6 +582,7 @@ a {
         text-decoration: none;
         background-color: transparent;
     }
+
     /*-------------------------------*/
     /*       Hamburger-Cross         */
     /*-------------------------------*/
@@ -590,11 +599,13 @@ a {
         right: 0;
         margin: auto;
     }
+
     .hamburger:hover,
     .hamburger:focus,
     .hamburger:active {
         outline: none;
     }
+
     .hamburger.is-closed:before {
         content: '';
         display: block;
@@ -607,12 +618,14 @@ a {
         -webkit-transform: translate3d(0, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-closed:hover:before {
         opacity: 1;
         display: block;
         -webkit-transform: translate3d(-100px, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-closed .hamb-top,
     .hamburger.is-closed .hamb-middle,
     .hamburger.is-closed .hamb-bottom,
@@ -624,52 +637,64 @@ a {
         height: 4px;
         width: 100%;
     }
+
     .hamburger.is-closed .hamb-top,
     .hamburger.is-closed .hamb-middle,
     .hamburger.is-closed .hamb-bottom {
         background-color: #1a1a1a;
     }
+
     .hamburger.is-closed .hamb-top {
         top: 5px;
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-closed .hamb-middle {
         top: 50%;
         margin-top: -2px;
     }
+
     .hamburger.is-closed .hamb-bottom {
         bottom: 5px;
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-closed:hover .hamb-top {
         top: 0;
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-closed:hover .hamb-bottom {
         bottom: 0;
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-open .hamb-top,
     .hamburger.is-open .hamb-middle,
     .hamburger.is-open .hamb-bottom {
         background-color: #1a1a1a;
     }
+
     .hamburger.is-open .hamb-top,
     .hamburger.is-open .hamb-bottom {
         top: 50%;
         margin-top: -2px;
     }
+
     .hamburger.is-open .hamb-top {
         -webkit-transform: rotate(45deg);
         -webkit-transition: -webkit-transform .35s cubic-bezier(.73, 1, .28, .08);
     }
+
     .hamburger.is-open .hamb-middle {
         display: none;
     }
+
     .hamburger.is-open .hamb-bottom {
         -webkit-transform: rotate(-45deg);
         -webkit-transition: -webkit-transform .35s cubic-bezier(.73, 1, .28, .08);
     }
+
     .hamburger.is-open:before {
         content: '';
         display: block;
@@ -682,16 +707,19 @@ a {
         -webkit-transform: translate3d(0, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
+
     .hamburger.is-open:hover:before {
         opacity: 1;
         display: block;
         -webkit-transform: translate3d(-100px, 0, 0);
         -webkit-transition: all .35s ease-in-out;
     }
+
     .fixed-top {
         right: 0;
         left: auto;
     }
+
     .overlay {
         width: 100%;
         height: 100%;
@@ -702,12 +730,14 @@ a {
         display: none;
         transition: .35s ease-in-out;
     }
+
+    #page-content-wrapper {
+        position: fixed;
+        width: 100%
+    }
 }
 
-
 /*#endregion*/
-
-
 /*#region banner*/
 
 .banner {
@@ -779,10 +809,11 @@ a {
 
 .btn_wrapper {
     display: flex;
-    width: 100%;
+    width: 90%;
     text-align: center;
     align-self: end;
     margin-top: 40px;
+    margin: 40px 0 0;
 }
 
 .btn_service {
@@ -839,6 +870,7 @@ a {
         position: absolute;
         top: 61px;
     }
+
     .hero-video:before {
         content: '';
         height: calc(100vh - 61px);
@@ -847,10 +879,7 @@ a {
     }
 }
 
-
 /*#endregion*/
-
-
 /*#region tek-card*/
 
 .tek-card {
@@ -992,7 +1021,6 @@ a {
     transform: scale(1.25, 1.25) translate(-40%, 0%);
 }
 
-
 /*#endregion*/
 
 .title h2 {
@@ -1014,7 +1042,6 @@ a {
     display: block;
     font-size: 1.5rem;
 }
-
 
 /*#region hiring*/
 
@@ -1082,10 +1109,7 @@ h2.title {
     margin-top: 25px;
 }
 
-
 /*#endregion*/
-
-
 /*#region signup_section*/
 
 .signup_section {
@@ -1093,9 +1117,6 @@ h2.title {
     width: 100%;
     display: block;
     position: relative;
-    /* background-image: url(../images/services/services-banner.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; */
 }
 
 .signup_section .shape_wrapper {
@@ -1156,10 +1177,7 @@ h2.title {
     margin-top: 0;
 }
 
-
 /*#endregion*/
-
-
 /*#region professionals*/
 
 .professionals {
@@ -1228,10 +1246,7 @@ h2.title {
     border-bottom: 1px solid #d5d8dc;
 }
 
-
 /*#endregion*/
-
-
 /*#region footer_hiring*/
 
 .footer_hiring {
@@ -1272,13 +1287,12 @@ h2.title {
     line-height: 32px;
 }
 
+.footer_hiring .btn_wrapper {
+    margin: 40px auto 0;
+}
 
 /*#endregion*/
-
-
 /*#region footer*/
-
-
 /*#region footer*/
 
 .footer_section {
@@ -1422,7 +1436,6 @@ h2.title {
 }
 
 .footer-social-links {
-    /* text-align: center; */
     padding-top: 20px;
 }
 
@@ -1474,13 +1487,18 @@ h2.title {
     margin-left: -42px;
 }
 
+.footer_quickLink {
+    margin-left: 30px;
+}
+
+.footer_bottom_wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*#endregion*/
-
-
 /*#endregion*/
-
-
 /*#region dropdoen in menu*/
 
 .dropbtn {
@@ -1560,6 +1578,7 @@ h2.title {
 }
 
 @media (min-width:1300px) {
+
     .container,
     .container-lg,
     .container-md,
@@ -1568,7 +1587,6 @@ h2.title {
         max-width: 1240px
     }
 }
-
 
 /*#endregion*/
 
@@ -1579,31 +1597,11 @@ h2.title {
     background-position: left;
 }
 
-
 /*#region responsive*/
 
-@media screen and (max-width:768px) {
-    .banner .banner_content {
-        padding: 0px 18px;
-    }
-    .banner h1 {
-        font-size: 25px;
-        line-height: 29px;
-    }
-    .banner p {
-        font-size: 19px;
-        margin: 0 auto 0px;
-        line-height: 23px;
-    }
-    .signup_section .shape_wrapper img {
-        max-width: none;
-        max-height: 100% !important;
-    }
-    .signup_section .shape_wrapper::before {
-        display: none;
-    }
-    .hiring_content {
-        margin-bottom: 50px;
+@media screen and (max-width:1200px) {
+    .footer_hiring_content .btn_service {
+        width: 44%;
     }
 }
 
@@ -1622,29 +1620,98 @@ h2.title {
         z-index: 2;
         background-size: cover;
     }
+
     .footer_hiring_content .btn_service {
-        width: 100%;
+        width: 60%;
     }
+
     .footer_quick_link {
         align-items: unset;
     }
-    .professionals .pro_item:first-child {
-        border-right: 0
-    }
+
     .professionals .pro_item:nth-of-type(even) {
         border-right: 1px solid #d5d8dc;
     }
+
     .professionals .pro_item {
         border: 1px solid #d5d8dc;
     }
+
     .professionals .pro_item:last-child {
         border-bottom: 1px solid #d5d8dc;
     }
+
     .footer_section {
         padding: 55px 0 0 0;
     }
+
     .footer_services_header {
         margin-left: 0;
+    }
+
+    .footer_quickLink {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner .banner_content {
+        padding: 0px 18px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .banner p {
+        font-size: 19px;
+        margin: 0 auto 0px;
+        line-height: 23px;
+    }
+
+    .signup_section .shape_wrapper img {
+        max-width: none;
+        max-height: 100% !important;
+    }
+
+    .signup_section .shape_wrapper::before {
+        display: none;
+    }
+
+    .title h2 {
+        font-size: 2.4em;
+    }
+
+    .hiring_content h2.title {
+        font-size: 2.4em;
+    }
+
+    .hiring .hiring_content p:last-of-type {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .hiring_content {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .hiring_content h2.title {
+        font-size: 2em;
+    }
+
+    .professionals .title {
+        margin-top: 60px;
+    }
+
+    .footer_hiring h2 {
+        font-size: 1.9rem;
+    }
+
+    .footer_hiring_content p {
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
@@ -1652,11 +1719,35 @@ h2.title {
     .professionals .pro_item {
         border: 1px solid #d5d8dc;
         border-bottom: 0;
+        margin: auto;
     }
+
     .professionals .pro_item:last-child {
         border-bottom: 1px solid #d5d8dc;
     }
-}
 
+    .footer_bottom_wrapp {
+        flex-wrap: wrap;
+    }
+
+    .hiring .hiring_content p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .footer_hiring_content .btn_service {
+        width: 100%;
+    }
+
+    .banner .btn_service {
+        padding: 11px 0;
+        font-size: 15px;
+        width: 164px;
+    }
+
+    .logo {
+        padding-top: 12px;
+    }
+}
 
 /*#endregion*/

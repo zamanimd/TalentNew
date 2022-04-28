@@ -269,5 +269,33 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .05) 6px, rgba(255, 255, 255, 0) 25px);
 }
 
+.about_second_mobile {
+    display: none;
+}
+
+
+/*#endregion*/
+
+
+/*#region responsive*/
+
+@media screen and (max-width:768px) {
+    .about_first .images_wrapper {
+        padding-left: 0;
+    }
+    .about_second .images_wrapper {
+        padding-right: 0;
+    }
+    .about_second {
+        display: none;
+    }
+    .about_second_mobile {
+        display: block;
+    }
+    .TalentHut_box_second {
+        margin-top: 90px;
+    }
+}
+
 
 /*#endregion*/
