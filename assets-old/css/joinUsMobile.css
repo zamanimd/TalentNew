@@ -1,0 +1,138 @@
+/* @author Akash Badiger Markiverse */
+
+@media (max-width:991px){
+.mkSkillStepa{
+	position: relative;
+	
+}
+.mkSkillStepa h4{
+	font-size:14px;
+	
+}
+.mkSkillStepa p{
+	font-size:12px;
+	
+}
+.mkSkillStep1a{
+	position: absolute;
+	    top: 12%;
+    left: 35%;
+}
+.mkSkillStep2a{
+	position: absolute;
+	    top: 29%;
+    left: 9%;
+}
+.mkSkillStep3a{
+	position: absolute;
+	top: 47%;
+    left: 39%;
+}
+.mkSkillStep4a{
+	position: absolute;
+	top: 64%;
+    right: 38%;
+}
+.mkSkillStep5a{
+	position: absolute;
+	  top: 79%;
+    right: 16%;
+}
+
+
+.mkthumbnaila {
+  position: relative;
+  
+  
+}
+
+.mkthumbnaila > img {
+  display: inline-block;
+	
+  color: #fff;
+  /* padding: 0.4em 0.6em; */
+  font-size: 1.3em;
+ 
+}
+
+.mkthumbnaila section {
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 5em;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  background: white;
+  border-radius: 15px !important;
+  z-index:10;
+}
+
+.mkthumbnaila section > p {
+  display:block;
+  text-align:left;
+  }
+
+
+.mkthumbnaila .parentPic {
+  display: block;
+  border-radius: 15px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.mkthumbnaila:focus section,
+.mkthumbnaila:hover section {
+  display: inline;
+  top:-35px;
+  z-index:10000;
+}
+
+.mkTextsa {  
+  position: relative;
+  width: 300px;
+  height: auto;
+  text-align: left;
+
+  line-height: 22px;
+  background-color:  white;
+  border: 8px solid  #b0b0b0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 4px #888;
+  -moz-box-shadow: 1px 1px 4px #888;
+  box-shadow: 1px 1px 4px #888;
+}
+.titlea{
+  text-align:left;
+}
+.mkTextsa > p{
+  
+}
+
+.mkTextsa:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top:5px;
+  border: 0px solid;
+  border-color:  #b0b0b0 transparent transparent  #b0b0b0;
+}
+
+.mkTextsa:after {
+  content: '';
+    position: absolute;
+   
+    left: -20px;
+    top: 20px;
+    width: 18px;
+    height: 37px;
+    border-right: solid 20px #b0b0b0;
+    border-bottom: solid 20px transparent;
+    border-top: solid 30px transparent;
+}
+}
+/* @author Akash Badiger Markiverse */

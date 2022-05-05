@@ -1,0 +1,271 @@
+/* @author Akash Badiger Markiverse */
+
+@media (max-width:991px){
+
+}
+/* @author Akash Badiger Markiverse */
+@media (min-width:992px){
+.mkSkillStep{
+	position: relative;
+	
+}
+.mkSkillStep1{
+	position: absolute;
+	top: 13%;
+    left: 4%;
+}
+.mkSkillStep2{
+	position: absolute;
+	    bottom: 10%;
+    left: 17%;
+
+}
+.mkSkillStep3{
+	position: absolute;
+	top: 13%;
+    right: 40%;
+}
+.mkSkillStep4{
+	position: absolute;
+	bottom: 11%;
+    right: 25%;
+}
+.mkSkillStep5{
+	position: absolute;
+	    top: 9%;
+    right: 7%;
+}
+
+
+.mkthumbnail {
+  position: relative;
+  
+  
+}
+
+.mkthumbnail > img {
+  display: inline-block;
+	
+  color: #fff;
+  /* padding: 0.4em 0.6em; */
+  font-size: 1.3em;
+ 
+}
+
+.mkthumbnail section {
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 5em;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  background: white;
+  border-radius: 15px !important;
+  z-index:10;
+}
+
+.mkthumbnail section > p {
+  display:block;
+  text-align:left;
+  }
+
+
+.mkthumbnail .parentPic {
+  display: block;
+  border-radius: 15px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.mkthumbnail:focus section,
+.mkthumbnail:hover section {
+  display: inline;
+  top:-35px;
+  z-index:10000;
+}
+
+.mkTexts {  
+  position: relative;
+  width: 300px;
+  height: auto;
+  text-align: left;
+
+  line-height: 22px;
+  background-color:  white;
+  border: 8px solid  #b0b0b0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 4px #888;
+  -moz-box-shadow: 1px 1px 4px #888;
+  box-shadow: 1px 1px 4px #888;
+}
+.title{
+  text-align:left;
+}
+.mkTexts > p{
+  
+}
+
+.mkTexts:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top:5px;
+  border: 0px solid;
+  border-color:  #b0b0b0 transparent transparent  #b0b0b0;
+}
+
+.mkTexts:after {
+  content: '';
+    position: absolute;
+   
+    left: -20px;
+    top: 20px;
+    width: 18px;
+    height: 37px;
+    border-right: solid 20px #b0b0b0;
+    border-bottom: solid 20px transparent;
+    border-top: solid 30px transparent;
+}
+}
+@media only screen and (max-width: 600px) {
+  .mkSkillStep{
+  position: relative;
+  
+}
+.mkthumbnail img{
+  width:23px !important;
+} 
+/* .mkthumbnail h4, p{ */
+  /* font-size:8px; */
+  /* line-height:1; */
+/* } */
+.mkthumbnail h4{
+  margin-bottom:4px;
+} 
+.mkSkillStep1{
+  position: absolute;
+      top: 38px;
+    left: 54%;
+}
+.mkSkillStep2{
+  position: absolute;
+  bottom: 20% ;
+    left: 1%;
+}
+.mkSkillStep3{
+  position: absolute;
+      top: 250px ;
+    left: 80% ;
+}
+.mkSkillStep4{
+  position: absolute;
+      bottom: 41%;
+    left: 10%;
+}
+.mkSkillStep5{
+  position: absolute;
+     bottom: 105px;
+    left: 57%;
+}
+
+
+.mkthumbnail {
+  position: relative;
+  
+  
+}
+
+.mkthumbnail > img {
+  display: inline-block;
+  
+  color: #fff;
+  /* padding: 0.4em 0.6em; */
+  font-size: 1.3em;
+ 
+}
+
+.mkthumbnail section {
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 5em;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  background: white;
+  border-radius: 15px !important;
+  z-index:10;
+}
+
+.mkthumbnail section > p {
+  display:block;
+  text-align:left;
+  }
+
+
+.mkthumbnail .parentPic {
+  display: block;
+  border-radius: 15px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.mkthumbnail:focus section,
+.mkthumbnail:hover section {
+  display: inline;
+  top:-35px;
+  z-index:10000;
+}
+
+.mkTexts {  
+  position: relative;
+  width: 300px;
+  height: auto;
+  text-align: left;
+
+  line-height: 22px;
+  background-color:  white;
+  border: 8px solid  #b0b0b0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 4px #888;
+  -moz-box-shadow: 1px 1px 4px #888;
+  box-shadow: 1px 1px 4px #888;
+}
+.title{
+  text-align:left;
+}
+.mkTexts > p{
+  
+}
+
+.mkTexts:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top:5px;
+  border: 0px solid;
+  border-color:  #b0b0b0 transparent transparent  #b0b0b0;
+}
+
+.mkTexts:after {
+  content: '';
+    position: absolute;
+   
+    left: -20px;
+    top: 20px;
+    width: 18px;
+    height: 37px;
+    border-right: solid 20px #b0b0b0;
+    border-bottom: solid 20px transparent;
+    border-top: solid 30px transparent;
+}
+}

@@ -1,0 +1,67 @@
+/* @author Akash Badiger Markiverse */
+
+@media(max-width: 991px){
+ .mk1join11{
+	position:relative;
+	
+}
+.mk1join11 h4{
+	font-size:12px;
+	line-height:0.4;
+}
+.mk1join11 p{
+	font-size:10px;
+}
+.mk1join11 .mk1join11{
+	position:absolute;
+	    top: 10%;
+    left: 39%;
+	
+}
+.mk1join11 .mk1join21{
+	position:absolute;
+	top: 24%;
+    
+    left: 39%;
+	
+}
+.mk1join11 .mk1join31{
+	position:absolute;
+	top: 37%;
+   
+    left: 39%;
+	
+}
+.mk1join11 .mk1join41 {
+	position:absolute;
+	top: 49%;
+    left: 39%;
+	
+}
+.mk1join11 .mk1join51{
+	position:absolute;
+	top: 67%;
+    
+    left: 39%;
+	
+}
+.mk1join11 .mk1join61{
+	position:absolute;
+	top: 81%;
+    
+    left: 39%;
+	
+}
+.mk1join11 .mk1join7{
+	position:absolute;
+	top: 0px;
+   
+    left: 6%;
+	
+}
+
+}
+/* @author Akash Badiger Markiverse */
+@media (max-width: 568px){
+ 
+}

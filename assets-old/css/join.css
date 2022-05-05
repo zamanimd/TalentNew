@@ -1,0 +1,191 @@
+/* @author Akash Badiger Markiverse */
+.mk1join{
+	position:relative;
+	
+}
+.mk1join .mk1join1{
+	position:absolute;
+	top: 0px;
+    width: 10%;
+    left: 14%;
+	
+}
+.mk1join .mk1join2{
+	position:absolute;
+	top: 0px;
+    width: 10%;
+    left: 27%;
+	
+}
+.mk1join .mk1join3{
+	position:absolute;
+	top: 0px;
+    width: 10%;
+    left: 41%;
+	
+}
+.mk1join .mk1join4{
+	position:absolute;
+	top: 0px;
+    width: 12%;
+    left: 52%;
+	
+}
+.mk1join .mk1join5{
+	position:absolute;
+	top: 0px;
+    width: 10%;
+    right: 25%;
+	
+}
+.mk1join .mk1join6{
+	position:absolute;
+	top: 0px;
+    width: 11%;
+    right: 10%;
+	
+}
+.mk1join .mk1join7{
+	position:absolute;
+	top: 0px;
+    width: 11%;
+    right: 6%;
+	
+}
+
+@media(min-width: 992px){
+	
+
+  .mkJoinStep{
+    position: relative;
+  }
+  .mkJoinStep .mkJoin1{
+    position: absolute;
+        bottom: 58px;
+    left: 204px;
+  }
+  .mkJoinStep .mkJoin2{
+    position: absolute;
+    top: 319px;
+    left: 155px;
+  }
+  .mkJoinStep .mkJoin3{
+    position: absolute;
+    top: 158px;
+    left: 340px;
+  }
+  .mkJoinStep .mkJoin4{
+    position: absolute;
+    top: 158px;
+    right: -104px;
+  }
+  .mkJoinStep .mkJoin5{
+    position: absolute;
+    bottom: 261px;
+    right: -114px;
+  }
+  .mkJoinStep .mkJoin6{
+    position: absolute;
+    bottom: 80px;
+    right: -105px;
+  }
+  .mkJoinStep .mkJoin7{
+    position: absolute;
+    top: -21px;
+    left: 360px;
+  }
+}
+@media(max-width: 991px){
+  .mkJoinStep p{
+    font-size: 12px ;
+  }
+  .mkJoinStep h4{
+    font-size: 12px ;
+	line-height: 0.1;
+  }
+  .mkJoinStep{
+    position: relative;
+  }
+  .mkJoinStep .mkJoin1{
+    position: absolute;
+    bottom: 5px;
+    left: 137px;
+  }
+  .mkJoinStep .mkJoin2{
+    position: absolute;
+    top: 189px;
+    left: 104px;
+  }
+  .mkJoinStep .mkJoin3{
+    position: absolute;
+   top: 84px;
+    left: 219px;
+  }
+  .mkJoinStep .mkJoin4{
+    position: absolute;
+        top: 94px;
+    right: -155px;
+  }
+  .mkJoinStep .mkJoin5{
+    position: absolute;
+        top: 231px;
+    right: -143px;
+  }
+  .mkJoinStep .mkJoin6{
+    position: absolute;
+       bottom: 23px;
+    right: -125px;
+
+  }
+  .mkJoinStep .mkJoin7{
+    position: absolute;
+    top: -38px;
+    left: 198px;
+  }
+}
+/* @author Akash Badiger Markiverse */
+@media (max-width: 568px){
+ .mkJoinStep p{
+    font-size: 12px !important;
+  }
+  .mkJoinStep{
+    position: relative;
+  }
+  .mkJoinStep .mkJoin1{
+    position: absolute;
+    bottom: -7px;
+    left: 48px;
+  }
+  .mkJoinStep .mkJoin2{
+    position: absolute;
+   top: 94px;
+    left: -15px;
+  }
+  .mkJoinStep .mkJoin3{
+    position: absolute;
+    top: 49px;
+    left: 62px;
+  }
+  .mkJoinStep .mkJoin4{
+    position: absolute;
+    top: 43px;
+    right: -164px;
+  }
+  .mkJoinStep .mkJoin5{
+    position: absolute;
+    top: 108px;
+    right: -140px;
+  }
+  .mkJoinStep .mkJoin6{
+    position: absolute;
+    bottom: -42px;
+    right: -144px;
+
+  }
+  .mkJoinStep .mkJoin7{
+    position: absolute;
+    top: -26px;
+    left: 41px;
+  }
+  
+}

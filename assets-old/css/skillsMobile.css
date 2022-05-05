@@ -1,0 +1,146 @@
+/* @author Akash Badiger Markiverse */
+
+@media (max-width:991px){
+.mkSkillStep11{
+	position: relative;
+	
+}
+.mkSkillStep11 h4{
+	font-size:14px;
+	line-height:1.6;
+	
+}
+.mkSkillStep11 p{
+	font-size:12px;
+	line-height:1.4;
+	
+}
+.mkSkillStep111{
+	position: absolute;
+	top: 3%;
+    left: 30%;
+}
+.mkSkillStep211{
+	position: absolute;
+	top: 19%;
+    left: 30%;
+}
+.mkSkillStep311{
+	position: absolute;
+	top: 34%;
+    left: 30%;
+
+}
+.mkSkillStep411{
+	position: absolute;
+	top: 52%;
+    left: 30%;
+}
+.mkSkillStep511{
+	position: absolute;
+	top: 67%;
+    left: 30%;
+}
+.mkSkillStep611{
+	position: absolute;
+	top: 82%;
+    left: 30%;
+}
+
+.mkthumbnail11 {
+  position: relative;
+  
+  
+}
+
+.mkthumbnail11 > img {
+  display: inline-block;
+	
+  color: #fff;
+  /* padding: 0.4em 0.6em; */
+  font-size: 1.3em;
+ 
+}
+
+.mkthumbnail11 section {
+  display: none;
+  position: absolute;
+  top: 1em;
+  left: 4em;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  background: white;
+  border-radius: 15px !important;
+  z-index:10;
+  width:100%;
+}
+
+.mkthumbnail11 section > p {
+  display:block;
+  text-align:left;
+  }
+
+
+.mkthumbnail11 .parentPic11 {
+  display: block;
+  border-radius: 15px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.mkShowThumb11:focus section,
+.mkShowThumb11:hover section {
+  display: inline;
+  top:0px;
+  z-index:10000;
+}
+
+.mkTexts11 {  
+  position: relative;
+  width: 300px;
+  height: auto;
+  text-align: left;
+
+  line-height: 22px;
+  background-color:  white;
+  border: 8px solid  #b0b0b0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 4px #888;
+  -moz-box-shadow: 1px 1px 4px #888;
+  box-shadow: 1px 1px 4px #888;
+}
+.title11{
+  text-align:left;
+}
+.mkTexts11 > p{
+  
+}
+
+.mkTexts11:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top:5px;
+  border: 0px solid;
+  border-color:  #b0b0b0 transparent transparent  #b0b0b0;
+}
+
+.mkTexts11:after {
+  content: '';
+    position: absolute;
+   
+    left: -20px;
+    top: 20px;
+    width: 18px;
+    height: 37px;
+    border-right: solid 20px #b0b0b0;
+    border-bottom: solid 20px transparent;
+    border-top: solid 30px transparent;
+}
+}
+/* @author Akash Badiger Markiverse */
