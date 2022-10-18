@@ -12,9 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;500;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
 
@@ -27,14 +26,23 @@
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Why TalentHut</a></li>
-                <li><a href="#events">Our Process</a></li>
-                <li><a href="#team">Services</a></li>
-                <li><a href="#works">Get Hired</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Hiring Advice /Blog</a></li>
-                <li><a href="#followme">Follow me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why-talent-hut.html">Why TalentHut</a></li>
+                <li><span class="drop_service">Services</span>
+                    <div class="drop_service_content">
+                        <a href="freelancers.html">Freelancers</a>
+                        <a href="permanent-hire.html">Permanent Hire</a>
+                        <a href="contract-hire.html">Contract Hire</a>
+                        <a href="managed-Solutions.html">Manage Solutions</a>
+                    </div>
+                </li>
+
+                <li><a href="our-process.html">Our Process</a></li>
+                <li><a href="get-hired.html">Get Hired</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://www.talenthut.com/getTalent.html">Sign Up</a></li>
+                <li><a href="https://www.talenthut.com/getHired.html">Get Hired</a></li>
+                <li><a href="https://www.talenthut.com/login.html">Log in</a></li>
             </ul>
         </nav>
 
@@ -45,7 +53,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-11 col-xl-3 col-10 col-sm-11">
+                        <div class="col-lg-11 col-xl-2 col-10 col-sm-11">
                             <div class="logo">
                                 <a href="index.html">
                                     <img src="assets/images/talentHutLogo.png" alt="logo" />
@@ -61,7 +69,7 @@
                             </button>
                         </div>
 
-                        <div class="col-xl-8 menu">
+                        <div class="col-xl-6 menu">
                             <ul>
                                 <li>
                                     <a href="index.html">
@@ -73,28 +81,44 @@
                                         Why TalentHut
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="services.html">
-                                        Services
-                                    </a>
-                                </li>
+
+                                <div class="dropdown">
+                                    <button class="dropbtn">Services</button>
+                                    <div class="dropdown-content">
+                                        <a href="freelancers.html">Freelancers</a>
+                                        <a href="permanent-hire.html">Permanent Hire</a>
+                                        <a href="contract-hire.html">Contract Hire</a>
+                                        <a href="managed-Solutions.html">Manage Solutions</a>
+                                    </div>
+                                </div>
+
                                 <li>
                                     <a href="our-process.html">
                                         Our Process
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="get-hired.html">
                                         Get Hired
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="blog.html"  class="active">
+                                        Blog
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="col-xl-1 login_wrapp">
-                            <a href="login.html" class="login_link">
-                                <img src="assets/images/icon/user.png" />
-                                <span>Log in</span>
+                        <div class="col-xl-4 shortcutlink_wrapp">
+                            <a href="https://www.talenthut.com/getTalent.html" class="shortcut_link">
+                                Sign up
+                            </a>
+
+                            <a href="https://www.talenthut.com/getHired.html" class="shortcut_link get_hired">
+                                Get Hired
+                            </a>
+                            <a href="https://www.talenthut.com/login.html" class="shortcut_link">
+                                Log in
                             </a>
                         </div>
                     </div>
@@ -123,7 +147,7 @@
                     <div class="col-md-4 col-12 col-sm-6 publication_container">
 
                         <div class="publication">
-                            <a href="BlogDetail.html" class="publication_a">
+                            <a href="blog-detail.html" class="publication_a">
                                 <div class="publication_img">
                                     <img src="assets/images/services/service_1.jpg" alt="">
                                 </div>
@@ -148,7 +172,7 @@
                     <div class="col-md-4 col-12 col-sm-6 publication_container">
 
                         <div class="publication">
-                            <a href="BlogDetail.html" class="publication_a">
+                            <a href="blog-detail.html" class="publication_a">
                                 <div class="publication_img">
                                     <img src="assets/images/services/service_1.jpg" alt="">
                                 </div>
@@ -173,7 +197,7 @@
                     <div class="col-md-4 col-12 col-sm-6 publication_container">
 
                         <div class="publication">
-                            <a href="BlogDetail.html" class="publication_a">
+                            <a href="blog-detail.html" class="publication_a">
                                 <div class="publication_img">
                                     <img src="assets/images/services/service_1.jpg" alt="">
                                 </div>
@@ -239,7 +263,7 @@
                             Let your dream take flight. Reach out Today.
                         </p>
                         <div class="btn_wrapper">
-                            <a class="btn_service btn-primary" href="#">Join our network</a>
+                            <a class="btn_service btn-primary" href="https://www.talenthut.com/getHired.html">Join our network</a>
                         </div>
                     </div>
                 </div>
@@ -250,27 +274,22 @@
         <section class="footer_section">
             <div class="container">
                 <div class="row mb-5">
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_about_us">
                             <img src="assets/images/talentHutLogoBig.png" />
-                            <p class="text-justify">
-                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
-                                IT professionals you need.
+                            <p>
+                                TalentHut finds, verifies, and hand-matches you with the highly-skilled IT professionals you
+                                need.
                             </p>
-                            <p class="text-justify">
-                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
-                                freelance IT professionals you need.
-                            </p>
-
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-3">
+    
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_quick_link">
                             <h3>Quick Links</h3>
                             <ul>
                                 <li>
-                                    <a href="index.html" class="active">
+                                    <a href="index.html">
                                         Home
                                     </a>
                                 </li>
@@ -290,20 +309,20 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
-                                        login
+                                    <a href="https://www.talenthut.com/login.html">
+                                        LOGIN
                                     </a>
                                 </li>
                             </ul>
-
+    
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_quick_link">
-                            <h3>Services</h3>
+                            <h3 class="footer_services_header">Services</h3>
                             <ul>
                                 <li>
-                                    <a href="index.html" class="active">
+                                    <a href="index.html">
                                         Freelancers
                                     </a>
                                 </li>
@@ -319,20 +338,20 @@
                                 </li>
                                 <li>
                                     <a href="get-hired.html">
-                                        Managed Soulutions
+                                        Managed Solutions
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.talenthut.com/getTalent.html">
                                         Join our Network
                                     </a>
                                 </li>
                             </ul>
-
+    
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-3">
+    
+                    <div class="col-11 col-sm-6 col-md-6 col-lg-3 m-auto my-0">
                         <div class="footer_contact">
                             <h3>Contact Info</h3>
                             <div class="footer_contact_item mb-3">
@@ -345,9 +364,8 @@
                                 <div class="footer_latest_update_content">
                                     <ul class="footer-social-links">
                                         <li>
-                                            <a target="_blank"
-                                                href="https://www.linkedin.com/company/talenthut-on-demand">
-
+                                            <a href="https://www.linkedin.com/company/talenthut-on-demand">
+    
                                                 <svg class="footer-social-link" xmlns="http://www.w3.org/2000/svg"
                                                     fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                     <path
@@ -360,18 +378,16 @@
                             </div>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
-
+    
             <div class="footer_bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-12 d-flex justify-content-center align-items-center">
                             <p>© 2022 All Rights Reserved. </p>
-                            <!-- <a href="terms-and-conditions.html">Terms And Conditions</a> -->
                             <a href="#">Terms And Conditions</a> |
-                            <!-- <a href="privacy-policy.html">Privacy Policy</a> -->
                             <a href="#">Privacy Policy</a>
                         </div>
                     </div>
