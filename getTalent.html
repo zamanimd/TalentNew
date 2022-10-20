@@ -1,380 +1,542 @@
-﻿<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134768118-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-134768118-1');
-</script>
-    <title>TALENT HUT</title>
-
-   
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="Freelancer, Freelance, Web Developers, Developer, Talent, On-Demand, On Demand, Freelance Talent">
-  <meta name="description" content="TalentHut provides highly vetted and motivated professionals, when and where you need them.
-  We can help you find freelance development, design, management and testing professionals for all your business processes, from innovation to optimization, delivering excellence while minimizing overhead and inefficiency to work short term or long term, full-time or part-time, or hourly.">
+    <title>Signup Customer | TALENTHUT</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pages/signup.css">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets-old/img/favicon.png" >
 
-   
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets-old/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets-old/css/style.css">
-	    <link href="assets-old/fonts/raleway/raleway.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets-old/css/headers/header-v6.css">
-    <link rel="stylesheet" href="assets-old/css/footers/footer-v1.css">
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets-old/plugins/animate.css">
-    <link rel="stylesheet" href="assets-old/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets-old/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets-old/css/custom.css">
-	<link rel="stylesheet" href="assets-old/css/animationTextTalent.css">
-	<style>
-	
-	
-.input-group-addon {
-    color: #015294;
-	}
-	</style>
-</head> 
+</head>
 
-<body>    
+<body>
 
-<body class="header-fixed">    
-
-<div class="wrapper">    
-    <!--=== Header v6 ===-->
-    <div class="header-v6 header-classic-white header-sticky">
-        <!-- Navbar -->
-        <div class="navbar mega-menu" role="navigation">
-            <div class="container container-space">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="menu-container">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Navbar Brand -->
-                    <div class="navbar-brand">
-                        <a href="/">
-                            <img src="assets-old/img/talentHutLogo.png" alt="Logo">
-                        </a>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="signup col-md-6 m-auto">
+                    <div class="logo_signup">
+                      <a href="index.html"> <img src="assets/images/talentHutLogo.png" alt="logo"></a> 
                     </div>
-                    <!-- ENd Navbar Brand -->
 
-                    <!-- Header Inner Right -->
-                    <div class="header-inner-right">
-                         <ul class="menu-icons-list">
-                            <li class="menu-icons shopping-cart">
-                                <a class="btn-u btn-u-blue rounded" href="getTalent.html">Get Talent</a>
-                            </li>
-                            <li class="menu-icons">
-							 <a class="btn-u rounded" href="getHired.html">Get Hired</a>
-                                <i class="menu-icons-style   "></i>
-                               
-                            </li>
-                        </ul>   
+                    <section>
+                        <p class="welcome_alert">
+                            Thanks for your interest in hiring through Toptal! Before we get started, we’d like to ask a
+                            few
+                            questions to better understand your business needs
+                        </p>
+
+                        <p class="p_question">What role would you like to hire?</p>
+                        <!-- <input type="text" class="custom_input" placeholder="Firstname" /> -->
+                        <!-- <div class="checkbox mt-3">
+                            <label>
+                                <input type="checkbox"> Check me out
+                            </label>
+                        </div> -->
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Developers
+                            </label>
+                            <span>Software Developers, Data Scientists, DevOps, and QA</span>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Designers
+                            </label>
+                            <span>Web, Mobile, UI/UX, Branding, and Visual Designers</span>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Project Managers
+                            </label>
+                            <span>Digital Project Managers, IT Project Managers, Scrum Masters, and Agile Coaches</span>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Product Managers
+                            </label>
+                            <span>Digital Product Managers, Product Owners, and Business Analysts</span>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Finance Experts
+                            </label>
+                            <span>Financial Modelers, Fundraising Advisors, M&A and FP&A Experts</span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <p class="p_question">How many people are employed at your company?</p>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                Less than 10
+                            </label>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                11 - 50
+                            </label>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                51 - 200
+                            </label>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                201 - 1000
+                            </label>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                1001 - 5000
+                            </label>
+                        </div>
+                        <div class="radio mt-3">
+                            <label for="flexRadioDefault2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                More than 5000
+                            </label>
+                        </div>
+                    </section>
+
+                    <section>
+                        <p class="mb-3">Address</p>
+                        <input type="text" class="custom_input mb-2" placeholder="Street, nbr" />
+                        <input type="text" class="custom_input mb-2" placeholder="City" />
+                        <input type="text" class="custom_input mb-2" placeholder="Postcode" />
+                        <input type="text" class="custom_input mb-2" placeholder="Country" />
+                    </section>
+
+                    <section>
+                        <p class="mb-3">Contact information</p>
+                        <input type="text" class="custom_input mb-2" placeholder="Email address" />
+                        <input type="text" class="custom_input mb-2" placeholder="Phone" />
+                        <input type="text" class="custom_input mb-2" placeholder="Mobile" />
+                    </section>
+
+                    <section>
+                        <div class="the_map">
+                            <svg class="blue_dots " width="520" height="266" xmlns="http://www.w3.org/2000/svg">
+                                <!-- animate_dots-fade_out  -->
+                                <g fill="none">
+                                    <g>
+                                        <path
+                                            d="M224.178 79.486c-.814 0-1.5.684-1.5 1.5 0 .814.685 1.5 1.5 1.5s1.5-.686 1.5-1.5c0-.815-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M244.006 63.622c-.814 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5c.813 0 1.499-.686 1.499-1.5.043-.814-.643-1.5-1.499-1.5z"
+                                            style="animation-delay: 150ms;">
+
+                                        </path>
+                                        <path
+                                            d="M232.11 51.683c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5s-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;"></path>
+                                        <path
+                                            d="M228.144 71.554c-.814 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                        <path
+                                            d="M279.784 71.554c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M267.844 63.622c-.814 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5c.814 0 1.5-.686 1.5-1.5s-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;">
+
+                                        </path>
+                                        <path
+                                            d="M263.878 51.683c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5s-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;">
+
+                                        </path>
+                                        <path
+                                            d="M255.946 59.657c-.813 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.858-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;"></path>
+                                        <path
+                                            d="M248.015 51.683c-.814 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5s1.5-.685 1.5-1.5-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;"></path>
+                                        <path
+                                            d="M291.681 47.716c-.815 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;">
+
+                                        </path>
+                                        <path
+                                            d="M311.552 55.691c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.686 1.5-1.5 0-.856-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 150ms;">
+
+                                        </path>
+                                        <path
+                                            d="M259.913 35.82c-.815 0-1.5.685-1.5 1.5 0 .814.684 1.5 1.5 1.5.813 0 1.5-.686 1.5-1.5s-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;"></path>
+                                        <path
+                                            d="M299.612 43.752c-.814 0-1.5.684-1.5 1.499 0 .814.685 1.5 1.5 1.5s1.5-.686 1.5-1.5c0-.815-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M236.075 135.09c-.815 0-1.5.686-1.5 1.501 0 .814.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5s-.644-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M208.272 127.159c-.814 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5 0-.815-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;"></path>
+                                        <path
+                                            d="M216.247 131.125c-.815 0-1.5.685-1.5 1.5 0 .814.684 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;"></path>
+                                        <path
+                                            d="M224.178 139.056c-.814 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5 1.5-.686 1.5-1.5-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;"></path>
+                                        <path
+                                            d="M216.247 103.322c-.815 0-1.5.686-1.5 1.5s.684 1.5 1.5 1.5c.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M240.041 91.425c-.814 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5c.814 0 1.5-.685 1.5-1.5 0-.857-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;"></path>
+                                        <path
+                                            d="M291.681 198.627c-.815 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 150ms;"></path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M109.001 178.756c-.814 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5 1.5-.685 1.5-1.5c0-.814-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;"></path>
+                                        <path
+                                            d="M109.001 198.627c-.814 0-1.5.686-1.5 1.5 0 .815.686 1.5 1.5 1.5s1.5-.685 1.5-1.5c0-.814-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                        <path
+                                            d="M160.64 170.824c-.814 0-1.5.686-1.5 1.5 0 .815.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;"></path>
+                                        <path
+                                            d="M156.676 190.697c-.815 0-1.5.684-1.5 1.5 0 .814.685 1.5 1.5 1.5.813 0 1.5-.686 1.5-1.5 0-.815-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;"></path>
+                                        <path
+                                            d="M152.71 166.859c-.814 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5c.814 0 1.5-.686 1.5-1.5s-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M144.735 158.928c-.813 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5s-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;">
+
+                                        </path>
+                                        <path
+                                            d="M105.036 139.056c-.815 0-1.5.686-1.5 1.5s.684 1.5 1.5 1.5c.814 0 1.5-.686 1.5-1.5s-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;"></path>
+                                        <path
+                                            d="M120.94 254.233c-.813 0-1.499.685-1.499 1.5s.685 1.5 1.5 1.5 1.5-.685 1.5-1.5c0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;"></path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M89.172 91.425c-.813 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5c.815 0 1.5-.685 1.5-1.5 0-.857-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 150ms;">
+
+                                        </path>
+                                        <path
+                                            d="M41.498 91.425c-.813 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5c.815 0 1.5-.685 1.5-1.5 0-.857-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;">
+
+                                        </path>
+                                        <path
+                                            d="M85.164 79.486c-.814 0-1.5.684-1.5 1.5 0 .814.685 1.5 1.5 1.5s1.5-.686 1.5-1.5c0-.815-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                        <path
+                                            d="M49.43 83.493c-.815 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.644-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;"></path>
+                                        <path
+                                            d="M53.438 75.52c-.814 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5 0-.815-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M37.532 67.588c-.814 0-1.5.685-1.5 1.5s.686 1.5 1.5 1.5c.815 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;"></path>
+                                        <path
+                                            d="M105.036 71.554c-.815 0-1.5.685-1.5 1.5 0 .814.684 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;"></path>
+                                        <path
+                                            d="M124.906 55.691c-.813 0-1.5.685-1.5 1.5 0 .814.687 1.5 1.501 1.5.814 0 1.5-.686 1.5-1.5 0-.856-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;"></path>
+                                        <path
+                                            d="M29.601 83.493c-.814 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5s1.5-.685 1.5-1.5c0-.814-.684-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;"></path>
+                                        <path
+                                            d="M29.601 71.554c-.814 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5s1.5-.685 1.5-1.5c0-.814-.684-1.5-1.5-1.5z"
+                                            style="animation-delay: 150ms;"></path>
+                                        <path
+                                            d="M45.465 115.22c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.813 0 1.5-.685 1.5-1.5s-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;"></path>
+                                        <path
+                                            d="M73.267 127.159c-.814 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.686 1.5-1.5 0-.815-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M65.336 91.425c-.815 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5c.814 0 1.5-.685 1.5-1.5 0-.857-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;"></path>
+                                        <path
+                                            d="M97.104 83.493c-.815 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.814-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;"></path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M450.523 218.499c-.815 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.686 1.5-1.5 0-.857-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;"></path>
+                                        <path
+                                            d="M442.591 214.533c-.813 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5c.815 0 1.5-.685 1.5-1.5 0-.856-.684-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;"></path>
+                                        <path
+                                            d="M494.188 210.568c-.814 0-1.5.684-1.5 1.499 0 .814.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.856-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;"></path>
+                                        <path
+                                            d="M502.163 218.499c-.814 0-1.5.685-1.5 1.5s.685 1.5 1.5 1.5c.814 0 1.5-.685 1.5-1.5 0-.857-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;"></path>
+                                        <path
+                                            d="M494.188 218.499c-.814 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5 0-.857-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 150ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M490.223 222.465c-.815 0-1.5.685-1.5 1.5 0 .813.685 1.5 1.5 1.5.814 0 1.5-.686 1.5-1.5s-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;"></path>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M335.347 91.425c-.815 0-1.5.686-1.5 1.5s.685 1.5 1.5 1.5c.813 0 1.5-.685 1.5-1.5 0-.857-.643-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                        <path
+                                            d="M375.089 111.253c-.815 0-1.5.687-1.5 1.5 0 .815.685 1.5 1.5 1.5.814 0 1.5-.685 1.5-1.5 0-.813-.686-1.499-1.5-1.499z"
+                                            style="animation-delay: 600ms;"></path>
+                                        <path
+                                            d="M454.489 55.691c-.814 0-1.5.685-1.5 1.5 0 .814.685 1.5 1.5 1.5.814 0 1.5-.686 1.5-1.5 0-.856-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;"></path>
+                                        <path
+                                            d="M438.625 95.39c-.814 0-1.5.686-1.5 1.5 0 .815.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.814-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;"></path>
+                                        <path
+                                            d="M434.616 91.425c-.813 0-1.498.686-1.498 1.5s.684 1.5 1.498 1.5c.815 0 1.5-.685 1.5-1.5.043-.857-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 1050ms;"></path>
+                                        <path
+                                            d="M426.686 99.356c-.814 0-1.5.686-1.5 1.5s.686 1.5 1.5 1.5 1.5-.685 1.5-1.5c0-.814-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 1200ms;"></path>
+                                        <path
+                                            d="M446.558 95.39c-.815 0-1.5.686-1.5 1.5 0 .815.685 1.5 1.5 1.5.813 0 1.5-.685 1.5-1.5 0-.814-.686-1.5-1.5-1.5z"
+                                            style="animation-delay: 0ms;"></path>
+                                        <path
+                                            d="M410.823 111.253c-.814 0-1.5.687-1.5 1.5 0 .815.685 1.5 1.5 1.5s1.5-.685 1.5-1.5c0-.813-.685-1.499-1.5-1.499z"
+                                            style="animation-delay: 150ms;"></path>
+                                        <path
+                                            d="M434.617 107.288c-.813 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5 0-.815-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 300ms;" class="talent_dot-skip_animation"></path>
+                                        <path
+                                            d="M418.754 123.193c-.814 0-1.5.686-1.5 1.5 0 .815.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.856-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 450ms;"></path>
+                                        <path
+                                            d="M422.72 150.996c-.814 0-1.5.685-1.5 1.5s.686 1.5 1.5 1.5c.815 0 1.5-.685 1.5-1.5 0-.857-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 600ms;"></path>
+                                        <path
+                                            d="M331.38 119.228c-.813 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.685 1.5-1.5 0-.858-.642-1.5-1.5-1.5z"
+                                            style="animation-delay: 750ms;"></path>
+                                        <path
+                                            d="M327.414 107.288c-.814 0-1.5.685-1.5 1.5 0 .814.686 1.5 1.5 1.5.815 0 1.5-.686 1.5-1.5 0-.815-.685-1.5-1.5-1.5z"
+                                            style="animation-delay: 900ms;"></path>
+                                        <path
+                                            d="M335.347 111.253c-.815 0-1.5.687-1.5 1.5 0 .815.685 1.5 1.5 1.5.813 0 1.5-.685 1.5-1.5 0-.813-.643-1.499-1.5-1.499z"
+                                            style="animation-delay: 1050ms;"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="the_map-talents">
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 200px; top: 109px; transform-origin: left top; animation-delay: 0ms, 0ms;">
+                                    <img class="the_map-talent-avatar"
+                                        src="assets/images/people/person_1_503666.jpg"><img
+                                        class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAMAAADUivDaAAAAY1BMVEUAru8AsPIAsvWNxj+PyUCRzEHC6f/D6f/D7P/E7f/h9dTi8tXi9dXj89bw+f/yZSL1ZiL3/fb4ZyL/wg7/xQ7/yA7/1sP/1sT/2cz/2s3/677/67//7sX/78X/9fH/+vD////ovMU+AAAAY0lEQVRYhe3MNwKAIBAEQFDMCRVz/P8rrbc7taHYecCo+zfFggULFp+LBtilNCFgwYKFD4UF3ZxHBgiKCYxnWxVAUGQgra9jB4JCgyBeBwcEhQI62VwPWLBg4UPxGgsWLFhIPSKZyjht3WkmAAAAAElFTkSuQmCC"
+                                        style="animation-delay: 100ms, 100ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 48px; height: 48px; left: 133px; top: -8px; transform-origin: right bottom; animation-delay: 400ms, 400ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_2_84d65f.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,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"
+                                        style="animation-delay: 500ms, 500ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 101px; top: 179px; transform-origin: right top; animation-delay: 800ms, 800ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_3_c5e51a.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,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"
+                                        style="animation-delay: 900ms, 900ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 300px; top: -12px; transform-origin: left bottom; animation-delay: 1200ms, 1200ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_4_876c72.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAFAUlEQVRo3u2Ya2wUVRTHpw8kbUHFagLsNkgoNba7tVBqECyKfDBSUAkaJKQtDeAHUAOon0yIEWM0AkajMTUSw6O7rX0pSBNCgh8wamIU1IK06Qs1NN2d3Zl9zb0zd+5cz+y21ird3tVpNeZO/h82d2d2z2/uOeeecyT2v7gkgSEwBIbAEBgCQ2AIDIEhMASGwBAY/xjDSn8xZjJmMAtEGKNTPMJMyojJDJMRyqg1xe87hpHmP3TGNPjeNOnwiHGlx/jxJzJwjcbiOrM0RunEZ8FuZMAqpZpM1QGq9tHYr5aRGF232L+Aodsv3jK+/Cax/2W18pHQ7d7g7MWBWYuCc0rCS1ZFN+/Ex9uoGkHMNsR+8SYz5cvk0tv6uTrUuQ63rUKtK1F7NT69Ub+wj/R/QrGKiX33TGEwBsYZF7ujG7eHcorikluRXLLkCiYFH8KSKyq5QUrxaq3xBCWMxob0L15ELVVaUxny34Oal6OWSpAGH5qXaT6P1uTBp9aTHp9FTQCefgzGMLMS7x9T5t4Vk9xgd2ByAY8qubVdNXrHWuT3Jk1fMan8FcjnwZ/vplpAJ2x6MYAhfvCtiOQOpQVIaURyx0pvZduzrOfy8IkK1FqVDiMlXxnueoLGrxtje+I8BviSdtQPL1jmY4gsug0YbNVK1vM3I3/l1BgtK8Dx8Ll6aiRSQe8whgFZtac/NK+UZx9AcsF8uiWHNWSx+qRqJfKqC7Xdy0OCmsrIxSPJiHcaA9wpsm0PBHSAbyu0lXPYDmmUIaUdufgjr/YxBwaEfut9ptJrUuYkBhxqxpVeOW+JzL0V1tZs253+iFErma8s4N0Qn8f49nVCHMWAqIi/8R7/VkRL5v15K0B1WdaePORfzoXRvAyf3mAZcScx4LBTauqi3BhoTf4NMEAN2fjDMq6UlRSVf3AOA8okjEN3PxDm86hAlsvYcBNruBFGnWS8U8ztV15z8IxjGBBmVFFlVyVnjgrmLDQ3zRrPURPDwzh0JycGZF5ytem/inE4E4wen5NOZel6qPTBDJyqZlKn0jNyqqEuh0M88lhDBiFePXmIH+UL8WY48qtoqNtJDGgeEocbM0i4SydJuM/k8yZcfwX+7FGLJBw+/kjvgFywlPf4y59vPZXz1+OPHFyocQeG8d0hh4+/ZDFCIw37MihGqiYWI7AVO3PxsXLeYqRttRUZME2nMaBOIwND4TvKOQNdzltAn8wdD3TIUa+5Ne7S0Pj+Xe6y8G8U6k0dSnYRZ6GuugttgGShbr5wC+fJDdWUfn6XZerThZGqcxNHGtXsojB/cVWXRffmo5N8bRM0G2e3US04jW3TWCNO0fFWpdAzZROr2CrSnt2if/qw5vekb2I16NF9Xv3CfooUw2QzMRkB7yJX+2Jbd4dmL4agVyVXaGyqICetB0JodCPedehku0EgWw/rXx+AFiI5UiiH6nV0qmCPFKAF9yJfOT7zOOnvBKsJZTM34IFm0J7xXLqsHXhTrd4UclUG55YEC4rlQk+4bG2sfq/e0UUTWmrAA5bphJlKH+n+QD//ND61HrWvQW33o86HcNdm/auXzGtnqRGf2QHPRJiUoTSsksGfSd8gHR6BchgWU+sWpb/fDDDYsEeGlh6l8es09gvVApRgIBwDoNM4buMqumxZY0r/UsbvmPLuGcUQE3WBITAEhsAQGAJDYAgMgSEwBIbAEBgCI4PrNyIG5ulUfd7rAAAAAElFTkSuQmCC"
+                                        style="animation-delay: 1300ms, 1300ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 400px; top: 109px; transform-origin: left top; animation-delay: 1600ms, 1600ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_5_3b7270.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,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"
+                                        style="animation-delay: 1700ms, 1700ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 48px; height: 48px; left: -25px; top: 14px; transform-origin: right bottom; animation-delay: 2000ms, 2000ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_6_8e0af3.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAMAAADUivDaAAACE1BMVEUBIJcBIJgBIJkBIJoBIZkBIZoBIZsBIZwBIZ0BIZ4BIZ8BIp8BIqECIZkDIpoEI5oEI5sFJJoFJJsGJZsHJpsIJpwJJ5wLKZsMKp4OK5wRLp0TMJ4TMKAUMaEVMZ8WMp8WM6EXM6IYNKIZNaAZNaEZNaMaNqMbN6MbN6QcOKMcOKQeOqQeOqUgO6UhPKYiPaYlQKcvSKsvSKwzTK00Ta02Tq04UK86Uq87U7A8VLA9VbE+VbJBWLJCWbNDWrRFW7JGXLNGXLRIXrNJX7RJX7VLYbVMYrVMYrdUablVabpVarlXa7tZbbxabrtbb71gc75gc79hdL5jdcBjdsBkdr9kd8Fld8FmeMBmeMFnecJoesJqfMNrfcRsfcNsfsRugMVvgMVzg8VzhMZ2h8iEk82GlMyGlc6LmdCMmtGNm9GPndKQntKRn9KToNOToNSUodSVotSWo9WXpNWZptWbp9ejrtqmsdqptNyuuN2vud+wut+zvOC1vuG5wuK6wuO6w+O7w+O9xeS+xuS/x+XAyOXByeXDyubDyufEy+bFzOfGzejJ0OnK0OnL0erO1OvR1uzX3O7X3O/Z3u/c4PDd4fHe4vHf4/Hf4/Lh5PLh5fLi5fPj5vPj5vTl6PTm6fTn6vXp6/Xq7Pbr7fbs7vbt7/fz9Pr09fv19vv29/v3+Pz4+fz5+vz7+/37+/79/f7+/v7///9i/k1KAAACOklEQVRYw+3W11cTURAH4LmXzc4oSDQQe0NFEbFjjAUb2Ct2sFfssXcxiGJvWBAREQ3GLBHnT/Qhgb0Ez9nd7IMvO2879+x3zuye87sD7LrAIzzCI9wR0XqXRGtNwL/7owvCOF9CQlDx2US2REMYJQCApFB9VkTLLj9CuvT8be8cE4kzxSSgrwRNrIs7I+6HSEK/klR+1wHxfutQHQaUPmRLs00ifqpInUGdZtzJLhvE75vl6gwCUajTzLuRtCTie3Q030F/dbVfGQoDRxM2BmlcjL7UCz4MR5mjC1FLP+tVL20MsvYB91wuIwEgBpVdMpiZjch0EgCC5lxjvnXCkqDA9hb+ejCIOPxQe2+z7UAQceSxGDdvonWWBAgqqjP4WcXK52r76bKqVxw/Ppb0zdYEgKT5d5j/9O/3MN+eSxLsEQC63Pgm8+DteqkD2CYA8iozD1bnpXTbBC7PPFiFTokVmQeVHuGCGPBT1zgltFmP+vebZmsOCfAV1H4yu+37C9MB4IAAQVPPpeMleWVGXxQ6IQAkhe4xMz+p6M0ge4SuZreevzPRfSSoJCHkbrAkri9Q0zdnxLcfo3LMZ43CTdbZ+ev0JPMOkGM6YxOk+XlKLhi2rqIPOwL4LwKH7W21fSE2hNOhrRAaLmp0cqcakVISKiFoWsRwuBx82VeIJoEFtZ+zWFEeL0VfitBwycPstpzk1ZmDR3fGxueWXuzOel3rODy54/uUmjZXS+Prn10vvAXaIzzifxN/AUMS5lnf3z/vAAAAAElFTkSuQmCC"
+                                        style="animation-delay: 2100ms, 2100ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 423px; top: 203px; transform-origin: right top; animation-delay: 2400ms, 2400ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_7_4dde60.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,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"
+                                        style="animation-delay: 2500ms, 2500ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 269px; top: 184px; transform-origin: left bottom; animation-delay: 2800ms, 2800ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_8_62e867.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,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"
+                                        style="animation-delay: 2900ms, 2900ms;">
+                                </div>
+                                <div class="the_map-talent animate_talent-pop_in"
+                                    style="width: 64px; height: 64px; left: 89px; top: 104px; transform-origin: left top; animation-delay: 3200ms, 3200ms;">
+                                    <img class="the_map-talent-avatar" src="assets/images/people/person_9_b636cc.jpg">
+                                    <img class="the_map-talent-company animate_talent-pop_in"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAFgUlEQVRo3u2Ye1AVdRTHb9M/TWopT/OBkvL2maYVimUy0MPHNIkMWjojXMUaQ55aFGppTWSak+agpQ1kCJYKl4egCCMqmYqKPMqrPMUL7Ovu3t27e/fu3s7vLjrQf86Agv7u/IaZuyzM+Zzz/Z5zdnWOx+KjwxgYA2NgDIyBMTAGxsAYGANjYAyMgTEwxmOBoVqtSlu7reK8rbJKZcyDDEPpIlDQqioeOc6ELiVcfInnJ9DT53OxyeIfBuVux4DGgPisGZnsshgqaA49M5SLS5WKy+yNLbazVZaNX1LT3iCGjieGelOBc9iYeCmvuM/r00fVILocvx4WotZQfq9C+lHQbv707HB+S7p8rRZKJBWUsitiybHTiGe9oET0jAWWlK22qssOu31AYLTS1oMXWldm1qSfvVN9l+dut4qZOZaI1eS4l4jnXoRDjp5iXrISFKWaWbnhpiX1a2pyCBUQzEatsWblKqYOgBG+28t/+6Pd2PiwMThRPnbVFHGg2jXplC7aoFt1Qrc6Pzj9QlULC7+lBNlR/4+8bQczc4FmD2LIOGr6fPFYAVIgzci1DdLJM5ZNX9GvvU2OmkyM8IFD+czmPtpoO39RlaR+xzB28lsKbvptrtCtKYDQddH5IxJLV2deP3eLMpnF7EvtYbsvjtlUtupwXXmLhTcR1kPZzFuR3McbpdJy+60mqbSCi/8C/EO6BwAh6RkE5SJfmES4+sFXauIsbl2y0m56ULE9AMaVFnN01vXhCaW6GINOb4Cf3qlnthUZ7zDWNtq6vdjok1au0xegs7ZQtyrvqdjClPybovNv7bebhV0ZzLzFpGcgin6kM/pRk0l3fxR9QDCnT5AKTymmThCe8P0+6HKsPl6uqeszDFlRK41U5M/Vz6wvRgBQhBiDT1rFnvIm1iobu/j1R2pdEp1ssYXoxBiGxp2MOnjtdBNnESSprJKN3kBNeBlkAwwoei39AAO2WbTCmpkDPUChGDE3z7zUaSq40yOAcPUlvWdYkjZDDfsAgxFscUfrXLVAow1en5btKmvkJfutLl7/Ww1EjK6v6wZwSzoVd7S+lrI5ZMlxopBduAISD4JBidcAPIMIFx9IvyUhTb56AxUKfP/Zdmrq6yhuN//uO8Ewbn6EewA9b7FkKOkzUXVy0v7KlrT8f0FCTaSwPqd22IYSJ0ARYnACpBxvaOTsDkVWjuYxoe9DzwXNdEePAJCc6Flhws59SmcX/E9b+TnUhb2mAVi3zDQA4Bkzlf1gHRhJtcn9YnHQWOKf9U9D6NHOIugNw+JKPsmpu222odQWlDBhEZBIUMX/AYLfsR7IUnkBbpPyT5rfXY6uu/UolAbgNZ1bmyj/Xf0wGu6Ndjb29xseiaUR+69cN/FoibpUbV4Wg6J37wEwcpJWAQQgihoAEx5JuPcu1OgpSHhjpyKA6pqHPf7ump19qLPTkrwVTWgI5X5kkFpoQYFzhB17VZZDEqo4b17yIci9Fycc+OoZyC6Ptf11+RFNcVURs3KpSSGot9zXBooMZRo2K3tzm9PERmhW0J2Qg3sCgPtdfKG3SkWnH+kyItvFnOPMm+8hN3sE3u+kMO9gKUSYFp7/ZjcMNdRee3JqtQqaK/x0SBWEAbEagujF7GNMyCJi+ERy4izhhwxVQnaHdYOGi1AoqEPPIgCwZyCs7rACD7jnDTCA9ZfDmkGVji4u/nPwd69+da8I9CvhYPSB/vRnb71Dz11IDBnfS0XOtouKEJeqDY0B/xBrk6UzlUzYMuSHe3KCgQBzWttwB9WzOC/w6XvI8TPQTuHia47U2xubB+ubERjG0LX4bTs10w/iFzyqLDv6/4PfU2EMjIExMAbGwBgYA2NgDIyBMTAGxsAYGOPJxfgPoJVgdtaQPAwAAAAASUVORK5CYII="
+                                        style="animation-delay: 3300ms, 3300ms;">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <input type="email" class="custom_input mb-3" placeholder="Email">
+                        <input type="text" class="custom_input mb-3" placeholder="Company name">
+                        <input type="email" class="custom_input mb-3" placeholder="Contact name">
+                        <input type="phone" class="custom_input mb-3" placeholder="Phone number">
+                    </section>
+                    <div class="button_wrapper">
+                        <!-- <div class="button m-auto" id="next">Get Started</div> -->
+                        <!-- <div class="button" id="prev"> Previous</div> -->
+                        <div class="button float-right" id="next">Next</div>
+                        <!-- <div class="button" id="submit">Agree and send application</div> -->
                     </div>
-                    
+
                 </div>
+                <div class="sidebar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>Trusted By</h3>
+                            </div>
+                        </div>
 
-               
-                <div class="collapse navbar-collapse navbar-responsive-collapse">
-                    <div class="menu-container">
-                       <ul class="nav navbar-nav">
-                           
-                            <li >
-                                <a href="index.html" >
-                                    Home
-                                </a>
-                                
-                            </li>
-                                                 
-                            <li>
-                                <a href="whyTalentHut.html" >
-                                    Why TalentHut
-                                </a>
-                                
-                            </li>
-                           
-                            <li >
-                                <a href="skillsMatching.html">
-                                    Skills & Matching
-                                </a>
-                                
-                            </li>
-                            
-                            <li>
-                               <a href="joinOurNetwork.html" >
-                                    Join Our Network
-                                </a>
-                            </li>
-                           <li>
-                                <a href="login.html" >
-                                    Login
-                                </a>
-                            </li>
-                            
-													
-                           
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/usc.svg" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/priceline.svg" />
+                            </div>
+                        </div>
 
-                           
-                        </ul>
-                    </div>
-                </div><!--/navbar-collapse-->
-            </div>    
-        </div>            
-        <!-- End Navbar -->
-    </div>
-    <!--=== End Header v6 ===-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/motorola.svg" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/thumbtack.svg" />
+                            </div>
+                        </div>
 
-    <!--=== Content Part ===-->
-	
-		<div class="container margin-bottom-10 margin-topss-150 marginstop50">
-		<div class="row">
-			
-			<div class="col-md-12">
-				<div class="wow fadeInUp text-center" >	
-					<h2 class=" darkGreen font30" >Get started here to find the right </h2>
-					<h2 class="sentence darkGreen font30 margin-top-20" >
-					<div class="verticalFlip" >
-						<span class="text-center">	Architects</span>
-						<span class="text-center">Analysts</span>
-						<span class="text-center">Designers</span>
-						<span class="text-center">Project Managers</span>
-						<span class="text-center">Scrum Masters</span>
-						<span class="text-center">Testers</span>
-						
-					</div>
-		
-					</h2>
-					
-					
-					<h2 class="darkGreen font30 margin-top-20" >for your team. </h2>
-				</div>
-				
-				
-			</div>
-		</div>
-   
-	</div>
-	<div style="background:url('assets-old/img/bg/lineBG.jpg') no-repeat center; background-size:cover; padding:0px 0px">
-	<div class="container margin-top-20">
-        <div class="row  ">
-		<div class="col-sm-1"></div>
-           <div class="col-sm-5">
-                <div class="text-center ">
-					<div >
-                    
-						<h2 class=" fontBlack text-center">How can we help you <br>build your future? </h2>
-                    
-					</div>
-					<ul class="list-unstyled " >
-						<li class="margin-top-20">
-							<a href="skillsMatching.html" class="btn-u btn-u-blue  rounded" style="padding: 6px 20px;">See how we match you with the right person.
-							</a>
-						</li>
-						<ul class="list-inline">
-							<li class="margin-top-20">
-							<a href="whyTalentHut.html" class="btn-u btn-u-blue  rounded">Why TalentHut
-							</a>
-						</li>
-						<li class="margin-top-20">
-							<a href="joinOurNetwork.html" class="btn-u btn-u-blue  rounded">See how we hire the best.
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/duolingo.svg" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/bridgestone.svg" />
+                            </div>
+                        </div>
 
-							</a>
-						</li>
-						</ul>
-						
-					</ul>
-					
-					</div>
-            </div>
-            <div class="col-sm-5">
-                <div class=" ">
-					<form id="getTalent" method="post">
-                    <div class=" ">            
-                        
-						<h2 class="fontBlack text-center">Let's Get Started.</h2>
-                    </div>
-
-                    <div class="input-group margin-bottom-10">
-                        <span class="input-group-addon rounded-left"><i class="fa fa-user"></i></span>
-                        <input type="text" id="full-name" placeholder="Full Name" class="form-control rounded-right" required="">
-                    </div> 
-					<div class="input-group margin-bottom-10">
-                        <span class="input-group-addon rounded-left"><i class="fa fa-envelope" style="font-size:11px;"></i></span>
-                        <input type="text" id="email" placeholder="Email" class="form-control rounded-right" required="">
-                    </div>
-					<div class="input-group margin-bottom-10">
-                        <span class="input-group-addon rounded-left"><i class="fa fa-certificate"></i></span>
-                        <input type="text" id="designation" placeholder="Designation" class="form-control rounded-right" required="">
-                    </div>					
-					<div class="row">
-						<div class="col-md-5">
-							<div class="input-group margin-bottom-10">
-					<span class="input-group-addon rounded-left">
-					<i class="fa fa-phone"></i></span>
-					<select class="form-control rounded-right" name="countryCode" id="countryCode" required="">
-					<!----><option value="0: 93">Afghanistan (+93)</option><option value="1: 355">Albania (+355)</option><option value="2: 213">Algeria (+213)</option><option value="3: 1-684">American Samoa (+1-684)</option><option value="4: 376">Andorra (+376)</option><option value="5: 244">Angola (+244)</option><option value="6: 1-264">Anguilla (+1-264)</option><option value="7: 672">Antarctica (+672)</option><option value="8: 1-268">Antigua and Barbuda (+1-268)</option><option value="9: 54">Argentina (+54)</option><option value="10: 374">Armenia (+374)</option><option value="11: 297">Aruba (+297)</option><option value="12: 61">Australia (+61)</option><option value="13: 43">Austria (+43)</option><option value="14: 994">Azerbaijan (+994)</option><option value="15: 1-242">Bahamas (+1-242)</option><option value="16: 973">Bahrain (+973)</option><option value="17: 880">Bangladesh (+880)</option><option value="18: 1-246">Barbados (+1-246)</option><option value="19: 375">Belarus (+375)</option><option value="20: 32">Belgium (+32)</option><option value="21: 501">Belize (+501)</option><option value="22: 229">Benin (+229)</option><option value="23: 1-441">Bermuda (+1-441)</option><option value="24: 975">Bhutan (+975)</option><option value="25: 591">Bolivia (+591)</option><option value="26: 387">Bosnia and Herzegovina (+387)</option><option value="27: 267">Botswana (+267)</option><option value="28: 55">Brazil (+55)</option><option value="29: 246">British Indian Ocean Territory (+246)</option><option value="30: 1-284">British Virgin Islands (+1-284)</option><option value="31: 673">Brunei (+673)</option><option value="32: 359">Bulgaria (+359)</option><option value="33: 226">Burkina Faso (+226)</option><option value="34: 257">Burundi (+257)</option><option value="35: 855">Cambodia (+855)</option><option value="36: 237">Cameroon (+237)</option><option selected value="37: 1">United States (+1)</option><option value="38: 1">Canada (+1)</option><option value="39: 238">Cape Verde (+238)</option><option value="40: 1-345">Cayman Islands (+1-345)</option><option value="41: 236">Central African Republic (+236)</option><option value="42: 235">Chad (+235)</option><option value="43: 56">Chile (+56)</option><option value="44: 86">China (+86)</option><option value="45: 61">Christmas Island (+61)</option><option value="46: 61">Cocos Islands (+61)</option><option value="47: 57">Colombia (+57)</option><option value="48: 269">Comoros (+269)</option><option value="49: 682">Cook Islands (+682)</option><option value="50: 506">Costa Rica (+506)</option><option value="51: 385">Croatia (+385)</option><option value="52: 53">Cuba (+53)</option><option value="53: 599">Curacao (+599)</option><option value="54: 357">Cyprus (+357)</option><option value="55: 420">Czech Republic (+420)</option><option value="56: 243">Democratic Republic of the Congo (+243)</option><option value="57: 45">Denmark (+45)</option><option value="58: 253">Djibouti (+253)</option><option value="59: 1-767">Dominica (+1-767)</option><option value="60: 1-809, 1-829, 1-849">Dominican Republic (+1-809, 1-829, 1-849)</option><option value="61: 670">East Timor (+670)</option><option value="62: 593">Ecuador (+593)</option><option value="63: 20">Egypt (+20)</option><option value="64: 503">El Salvador (+503)</option><option value="65: 240">Equatorial Guinea (+240)</option><option value="66: 291">Eritrea (+291)</option><option value="67: 372">Estonia (+372)</option><option value="68: 251">Ethiopia (+251)</option><option value="69: 500">Falkland Islands (+500)</option><option value="70: 298">Faroe Islands (+298)</option><option value="71: 679">Fiji (+679)</option><option value="72: 358">Finland (+358)</option><option value="73: 33">France (+33)</option><option value="74: 689">French Polynesia (+689)</option><option value="75: 241">Gabon (+241)</option><option value="76: 220">Gambia (+220)</option><option value="77: 995">Georgia (+995)</option><option value="78: 49">Germany (+49)</option><option value="79: 233">Ghana (+233)</option><option value="80: 350">Gibraltar (+350)</option><option value="81: 30">Greece (+30)</option><option value="82: 299">Greenland (+299)</option><option value="83: 1-473">Grenada (+1-473)</option><option value="84: 1-671">Guam (+1-671)</option><option value="85: 502">Guatemala (+502)</option><option value="86: 44-1481">Guernsey (+44-1481)</option><option value="87: 224">Guinea (+224)</option><option value="88: 245">Guinea-Bissau (+245)</option><option value="89: 592">Guyana (+592)</option><option value="90: 509">Haiti (+509)</option><option value="91: 504">Honduras (+504)</option><option value="92: 852">Hong Kong (+852)</option><option value="93: 36">Hungary (+36)</option><option value="94: 354">Iceland (+354)</option><option value="95: 91">India (+91)</option><option value="96: 62">Indonesia (+62)</option><option value="97: 98">Iran (+98)</option><option value="98: 964">Iraq (+964)</option><option value="99: 353">Ireland (+353)</option><option value="100: 44-1624">Isle of Man (+44-1624)</option><option value="101: 972">Israel (+972)</option><option value="102: 39">Italy (+39)</option><option value="103: 225">Ivory Coast (+225)</option><option value="104: 1-876">Jamaica (+1-876)</option><option value="105: 81">Japan (+81)</option><option value="106: 44-1534">Jersey (+44-1534)</option><option value="107: 962">Jordan (+962)</option><option value="108: 7">Kazakhstan (+7)</option><option value="109: 254">Kenya (+254)</option><option value="110: 686">Kiribati (+686)</option><option value="111: 383">Kosovo (+383)</option><option value="112: 965">Kuwait (+965)</option><option value="113: 996">Kyrgyzstan (+996)</option><option value="114: 856">Laos (+856)</option><option value="115: 371">Latvia (+371)</option><option value="116: 961">Lebanon (+961)</option><option value="117: 266">Lesotho (+266)</option><option value="118: 231">Liberia (+231)</option><option value="119: 218">Libya (+218)</option><option value="120: 423">Liechtenstein (+423)</option><option value="121: 370">Lithuania (+370)</option><option value="122: 352">Luxembourg (+352)</option><option value="123: 853">Macau (+853)</option><option value="124: 389">Macedonia (+389)</option><option value="125: 261">Madagascar (+261)</option><option value="126: 265">Malawi (+265)</option><option value="127: 60">Malaysia (+60)</option><option value="128: 960">Maldives (+960)</option><option value="129: 223">Mali (+223)</option><option value="130: 356">Malta (+356)</option><option value="131: 692">Marshall Islands (+692)</option><option value="132: 222">Mauritania (+222)</option><option value="133: 230">Mauritius (+230)</option><option value="134: 262">Mayotte (+262)</option><option value="135: 52">Mexico (+52)</option><option value="136: 691">Micronesia (+691)</option><option value="137: 373">Moldova (+373)</option><option value="138: 377">Monaco (+377)</option><option value="139: 976">Mongolia (+976)</option><option value="140: 382">Montenegro (+382)</option><option value="141: 1-664">Montserrat (+1-664)</option><option value="142: 212">Morocco (+212)</option><option value="143: 258">Mozambique (+258)</option><option value="144: 95">Myanmar (+95)</option><option value="145: 264">Namibia (+264)</option><option value="146: 674">Nauru (+674)</option><option value="147: 977">Nepal (+977)</option><option value="148: 31">Netherlands (+31)</option><option value="149: 599">Netherlands Antilles (+599)</option><option value="150: 687">New Caledonia (+687)</option><option value="151: 64">New Zealand (+64)</option><option value="152: 505">Nicaragua (+505)</option><option value="153: 227">Niger (+227)</option><option value="154: 234">Nigeria (+234)</option><option value="155: 683">Niue (+683)</option><option value="156: 850">North Korea (+850)</option><option value="157: 1-670">Northern Mariana Islands (+1-670)</option><option value="158: 47">Norway (+47)</option><option value="159: 968">Oman (+968)</option><option value="160: 92">Pakistan (+92)</option><option value="161: 680">Palau (+680)</option><option value="162: 970">Palestine (+970)</option><option value="163: 507">Panama (+507)</option><option value="164: 675">Papua New Guinea (+675)</option><option value="165: 595">Paraguay (+595)</option><option value="166: 51">Peru (+51)</option><option value="167: 63">Philippines (+63)</option><option value="168: 64">Pitcairn (+64)</option><option value="169: 48">Poland (+48)</option><option value="170: 351">Portugal (+351)</option><option value="171: 1-787, 1-939">Puerto Rico (+1-787, 1-939)</option><option value="172: 974">Qatar (+974)</option><option value="173: 242">Republic of the Congo (+242)</option><option value="174: 262">Reunion (+262)</option><option value="175: 40">Romania (+40)</option><option value="176: 7">Russia (+7)</option><option value="177: 250">Rwanda (+250)</option><option value="178: 590">Saint Barthelemy (+590)</option><option value="179: 290">Saint Helena (+290)</option><option value="180: 1-869">Saint Kitts and Nevis (+1-869)</option><option value="181: 1-758">Saint Lucia (+1-758)</option><option value="182: 590">Saint Martin (+590)</option><option value="183: 508">Saint Pierre and Miquelon (+508)</option><option value="184: 1-784">Saint Vincent and the Grenadines (+1-784)</option><option value="185: 685">Samoa (+685)</option><option value="186: 378">San Marino (+378)</option><option value="187: 239">Sao Tome and Principe (+239)</option><option value="188: 966">Saudi Arabia (+966)</option><option value="189: 221">Senegal (+221)</option><option value="190: 381">Serbia (+381)</option><option value="191: 248">Seychelles (+248)</option><option value="192: 232">Sierra Leone (+232)</option><option value="193: 65">Singapore (+65)</option><option value="194: 1-721">Sint Maarten (+1-721)</option><option value="195: 421">Slovakia (+421)</option><option value="196: 386">Slovenia (+386)</option><option value="197: 677">Solomon Islands (+677)</option><option value="198: 252">Somalia (+252)</option><option value="199: 27">South Africa (+27)</option><option value="200: 82">South Korea (+82)</option><option value="201: 211">South Sudan (+211)</option><option value="202: 34">Spain (+34)</option><option value="203: 94">Sri Lanka (+94)</option><option value="204: 249">Sudan (+249)</option><option value="205: 597">Suriname (+597)</option><option value="206: 47">Svalbard and Jan Mayen (+47)</option><option value="207: 268">Swaziland (+268)</option><option value="208: 46">Sweden (+46)</option><option value="209: 41">Switzerland (+41)</option><option value="210: 963">Syria (+963)</option><option value="211: 886">Taiwan (+886)</option><option value="212: 992">Tajikistan (+992)</option><option value="213: 255">Tanzania (+255)</option><option value="214: 66">Thailand (+66)</option><option value="215: 228">Togo (+228)</option><option value="216: 690">Tokelau (+690)</option><option value="217: 676">Tonga (+676)</option><option value="218: 1-868">Trinidad and Tobago (+1-868)</option><option value="219: 216">Tunisia (+216)</option><option value="220: 90">Turkey (+90)</option><option value="221: 993">Turkmenistan (+993)</option><option value="222: 1-649">Turks and Caicos Islands (+1-649)</option><option value="223: 688">Tuvalu (+688)</option><option value="224: 1-340">U.S. Virgin Islands (+1-340)</option><option value="225: 256">Uganda (+256)</option><option value="226: 380">Ukraine (+380)</option><option value="227: 971">United Arab Emirates (+971)</option><option value="228: 44">United Kingdom (+44)</option><option value="229: 598">Uruguay (+598)</option><option value="230: 998">Uzbekistan (+998)</option><option value="231: 678">Vanuatu (+678)</option><option value="232: 379">Vatican (+379)</option><option value="233: 58">Venezuela (+58)</option><option value="234: 84">Vietnam (+84)</option><option value="235: 681">Wallis and Futuna (+681)</option><option value="236: 212">Western Sahara (+212)</option><option value="237: 967">Yemen (+967)</option><option value="238: 260">Zambia (+260)</option><option value="239: 263">Zimbabwe (+263)</option>
-					</select>
-					</div>
-						</div>
-						<div class="col-md-7">
-							 <div class="input-group margin-bottom-10">
-								<span class="input-group-addon rounded-left"><i class="fa fa-phone"></i></span>
-								<input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control rounded-right" required="">
-							</div> 
-						</div>
-					</div>
-					  <div class="input-group margin-bottom-10">
-                        <span class="input-group-addon rounded-left"><i class="fa fa-building" style="font-size: 12px;"></i></span>
-                        <input type="text" placeholder="Company Name" id="companyName" class="form-control rounded-right">
-                    </div> 
-					 <div class="input-group margin-bottom-10">
-                        <span class="input-group-addon rounded-left"><i class="fa fa-users" style="font-size: 11px;"></i></span>
-                        <input type="text" placeholder="Company Size" id="companySize" class="form-control rounded-right">
-                    </div> 
-					<div class="input-group margin-bottom-10">
-						<span class="input-group-addon rounded-left"><i class="fa fa-edit"></i></span>
-						<textarea class="form-control rounded-right" id="howCanWeHelpYou" name="howCanWeHelpYou" placeholder="How can we help you?" required="" rows="2"></textarea>
-					</div>
-                   
-                    <div class="row">
-                        
-                        <div class="col-md-12">
-							<div class="text-center">
-								<button class="btn-u  btn-u-blue rounded" type="submit">Get Talent</button>   
-							</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/csr.svg" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/signup/avaliers.svg" />
+                            </div>
                         </div>
                     </div>
-
-                  
-
-                  
-                </form> 
-					
-				</div>
+                </div>
             </div>
-			 <div class="col-sm-1"></div>
-           
-        </div>        
-		</div>
-	</div>
-   		
-    <!--=== End Content Part ===-->
+        </div>
+    </div>
 
-     <!--=== Footer Version 1 ===-->
-    <div class="margin-top-50">
-	   <div class="container " >
-			
-			
-			<div class="" >
-				<div class="row">
-					<div class="col-md-3 col-sm-3 col-xs-12  wow fadeInUp">
-						<img src="assets-old/img/bg/logoHands.png" class="img-responsive marginleft10"/>
-						
-						
-					</div>
-					<div class="hidden-xs">
-					<div class="col-md-7 col-sm-7 text-center">
-						<ul class="list-inline wow fadeInUp margin-top-20">
-							<li ><a class="darkBlue" href="index.html"><b>Home</b></a></li>
-							<li><a class="darkBlue" href="whyTalentHut.html"><b>Why TalentHut</b></a></li>
-							<li ><a class="darkBlue" href="skillsMatching.html"><b>Skills & Matching</b></a></li>
-							<li ><a class="darkBlue" href="joinOurNetwork.html"><b>Join Our Network</b></a></li>
-							
-							
-						</ul>
-						<br>
-						<p style="font-size:12px;" class="">&copy; 2020 All Rights Reserved. 
-						<a href="termsAndConditions.html">Terms & Conditions</a> | 
-						<a href="privacyPolicy.html">Privacy Policy</a></p>
-					</div>
-					</div>
-					<div class="hidden-sm  hidden-md hidden-lg">
-					<div class="col-md-5 col-sm-5 text-center">
-						<ul class="list-inline wow fadeInUp margin-top-30">
-							<li ><a class="darkBlue" href="index.html"><b>Home</b></a></li>
-							<li><a class="darkBlue" href="whyTalentHut.html"><b>Why TalentHut</b></a></li>
-							
-							
-							
-						</ul>
-						<ul class="list-inline wow fadeInUp ">
-							
-							<li ><a class="darkBlue" href="skillsMatching.html"><b>Skills & Matching</b></a></li>
-							<li ><a class="darkBlue" href="joinOurNetwork.html"><b>Join Our Network</b></a></li>
-							
-							
-						</ul>
-						<br>
-						<p style="font-size:12px;" class="">&copy; 2020 All Rights Reserved. 
-						<a href="termsAndConditions.html">Terms & Conditions</a> | 
-						<a href="privacyPolicy.html">Privacy Policy</a></p>
-					</div>
-					</div>
-					<div class="col-md-2 col-sm-2 col-xs-12 ">
-						<div class="wow fadeInUp ">
-							
-							<ul class="list-inline margin-top-20">
-								
-								<li>
-									<div class="linkedinicon">
-										<a href="https://www.linkedin.com/company/talenthut-on-demand" target="_blank">
-										<i class="fa fa-linkedin"></i></a>
-									</div>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-	   </div>
-	</div>    
-    <!--=== End Footer Version 1 ===-->
-</div><!--/wrapper-->
 
-<!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets-old/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="assets-old/plugins/jquery/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="assets-old/plugins/bootstrap/js/bootstrap.min.js"></script> 
-<!-- JS Implementing Plugins -->           
-<script type="text/javascript" src="assets-old/plugins/back-to-top.js"></script>
+    <script src='assets/js/jquery-3.6.0.min.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
 
-<!-- JS Customization -->
-<script type="text/javascript" src="assets-old/js/custom.js"></script>
-<!-- JS Page Level -->           
-<script type="text/javascript" src="assets-old/js/app.js"></script>
-<script type="text/javascript" src="assets-old/js/get-talents.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
+    <script>
+        $(document).ready(function () {
+
+
+            var child = 1;
+            var length = $("section").length - 1;
+            $("#prev").addClass("disabled");
+            $("#submit").addClass("disabled");
+
+            $("section").not("section:nth-of-type(1)").hide();
+            $("section").not("section:nth-of-type(1)").css('transform', 'translateX(100px)');
+
+
+
+            $(".button").click(function () {
+                var id = $(this).attr("id");
+                if (id == "next") {
+                    $("#prev").removeClass("disabled");
+                    if (child >= length) {
+                        $(this).addClass("disabled");
+                        $('#submit').removeClass("disabled");
+                    }
+                    if (child <= length) {
+                        child++;
+                    }
+                } else if (id == "prev") {
+                    $("#next").removeClass("disabled");
+                    $('#submit').addClass("disabled");
+                    if (child <= 2) {
+                        $(this).addClass("disabled");
+                    }
+                    if (child > 1) {
+                        child--;
+                    }
+                }
+
+                var currentSection = $("section:nth-of-type(" + child + ")");
+                currentSection.fadeIn();
+                currentSection.css('transform', 'translateX(0)');
+                currentSection.prevAll('section').css('transform', 'translateX(-100px)');
+                currentSection.nextAll('section').css('transform', 'translateX(100px)');
+                $('section').not(currentSection).hide();
+            });
+
         });
-</script>
-<!--[if lt IE 9]>
-    <script src="assets-old/plugins/respond.js"></script>
-    <script src="assets-old/plugins/html5shiv.js"></script>
-    <script src="assets-old/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
+    </script>
 
 </body>
-</html> 
+
+</html>

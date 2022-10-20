@@ -1,316 +1,329 @@
-﻿<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
+<!DOCTYPE html>
 <html lang="en">
-<!--<![endif]-->
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134768118-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-134768118-1');
-</script>
-    <title>TALENT HUT</title>
-
-
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Freelancer, Freelance, Web Developers, Developer, Talent, On-Demand, On Demand, Freelance Talent">
-    <meta name="description"
-        content="TalentHut provides highly vetted and motivated professionals, when and where you need them.
-  We can help you find freelance development, design, management and testing professionals for all your business processes, from innovation to optimization, delivering excellence while minimizing overhead and inefficiency to work short term or long term, full-time or part-time, or hourly.">
+    <title>Login | TALENTHUT</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pages/login.css">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets-old/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 
-
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets-old/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets-old/css/style.css">
-    <link href="assets-old/fonts/raleway/raleway.css" rel="stylesheet">
-
-    <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets-old/css/headers/header-v6.css">
-    <link rel="stylesheet" href="assets-old/css/footers/footer-v1.css">
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets-old/plugins/animate.css">
-    <link rel="stylesheet" href="assets-old/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets-old/plugins/font-awesome/css/font-awesome.min.css">
-
-
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets-old/css/custom.css">
-    <link rel="stylesheet" href="assets-old/css/animationHired.css">
-    <style>
-        .input-group-addon {
-            color: #72c02c;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
 
 <body>
+    <div id="wrapper">
 
-    <body class="header-fixed">
+        <div class="overlay is-closed" data-toggle="offcanvas"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#followme">Follow me</a></li>
+            </ul>
+        </nav>
 
-        <div class="wrapper">
-            <!--=== Header v6 ===-->
-            <div class="header-v6 header-classic-white header-sticky">
-                <!-- Navbar -->
-                <div class="navbar mega-menu" role="navigation">
-                    <div class="container container-space">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="menu-container">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-responsive-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
 
-                            <!-- Navbar Brand -->
-                            <div class="navbar-brand">
-                                <a href="/">
-                                    <img src="assets-old/img/talentHutLogo.png" alt="Logo">
+
+        <section id="page-content-wrapper">
+            <div class="top_menu">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-11 col-xl-3 col-10 col-sm-11">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/talentHutLogo.png" alt="logo" />
                                 </a>
                             </div>
-                            <!-- ENd Navbar Brand -->
-
-                            <!-- Header Inner Right -->
-                            <div class="header-inner-right">
-                                <ul class="menu-icons-list">
-                                    <li class="menu-icons shopping-cart">
-                                        <a class="btn-u btn-u-blue rounded" href="getTalent.html">Get Talent</a>
-                                    </li>
-                                    <li class="menu-icons">
-                                        <a class="btn-u rounded" href="getHired.html">Get Hired</a>
-                                        <i class="menu-icons-style   "></i>
-
-                                    </li>
-                                </ul>
-                            </div>
-
+                        </div>
+                        <div class="hamburger_menu col-lg-1 col-2 col-sm-1">
+                            <button type="button" class="hamburger animated fadeInLeft is-closed"
+                                data-toggle="offcanvas">
+                                <span class="hamb-top"></span>
+                                <span class="hamb-middle"></span>
+                                <span class="hamb-bottom"></span>
+                            </button>
                         </div>
 
+                        <div class="col-xl-8 menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="why-talent-hut.html">
+                                        Why TalentHut
+                                    </a>
+                                </li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Services</button>
+                                    <div class="dropdown-content">
+                                        <a href="freelancers.html">Freelancers</a>
+                                        <a href="permanent-hire.html">Permanent Hire</a>
+                                        <a href="contract-hire.html">Contract Hire</a>
+                                        <a href="managed-soulutions.html">Manage Solutions</a>
+                                    </div>
+                                </div>
+                                <li>
+                                    <a href="our-process.html">
+                                        Our Process
+                                    </a>
+                                </li>
 
-                        <div class="collapse navbar-collapse navbar-responsive-collapse">
-                            <div class="menu-container">
-                                <ul class="nav navbar-nav">
-
-                                    <li>
-                                        <a href="index.html">
-                                            Home
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a href="whyTalentHut.html">
-                                            Why TalentHut
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a href="skillsMatching.html">
-                                            Skills & Matching
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a href="joinOurNetwork.html">
-                                            Join Our Network
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="login.html">
-                                            Login
-                                        </a>
-                                    </li>
-
-
-
-
-                                </ul>
-                            </div>
+                                <li>
+                                    <a href="get-hired.html">
+                                        Get Hired
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <!--/navbar-collapse-->
-                    </div>
-                </div>
-                <!-- End Navbar -->
-            </div>
-            <!--=== End Header v6 ===-->
-
-            <!--=== Content Part ===-->
-
-            <div class="container margin-bottom-10 margintop122 marginstop50">
-
-
-            </div>
-            <div
-                style="background:url('assets-old/img/bg/lineBG.jpg') no-repeat center; background-size:cover; padding:50px 0px">
-                <div class="container margin-top-20">
-                    <div class="row  ">
-
-
-
-
-                        <div class="col-md-5 col-md-offset-4">
-                            <div class="">
-                                <form class="" id="loginForm" method="post">
-                                    <div class="">
-
-                                        <h2 class=" fontBlack text-center">Login</h2>
-                                    </div>
-
-                                    <div class="input-group margin-bottom-10">
-                                        <span class="input-group-addon rounded-left"><i class="fa fa-envelope"
-                                                style="font-size:11px;"></i></span>
-                                        <input type="text" placeholder="Enter email" id="email"
-                                            class="form-control rounded-right ">
-                                    </div>
-                                    <div class="input-group margin-bottom-10">
-                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                        <input type="password" placeholder="Enter password" id="password"
-                                            class="form-control rounded-right">
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-12 checkbox text-center">
-                                            <label><input type="checkbox"> Remember me</label>
-                                        </div>
-                                        <div class="col-md-12 text-center">
-                                            <button class="btn-u rounded" type="submit">Login</button>
-                                        </div>
-                                        <div class="col-md-12 checkbox text-center">
-                                            <a href="forgotPassword.html"> Forgot Password ?</a>
-                                        </div>
-                                    </div>
-
-
-
-                                </form>
-
-                            </div>
+                        <div class="col-xl-1 login_wrapp">
+                            <a href="login.html" class="login_link">
+                                <img src="assets/images/icon/user.png" />
+                                <span>Log in</span>
+                            </a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
-            <!--=== End Content Part ===-->
-
-            <!--=== Footer Version 1 ===-->
-            <div class="margin-top-50">
-                <div class="container ">
+        </section>
 
 
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-12   wow fadeInUp">
-                                <img src="assets-old/img/bg/logoHands.png" class="img-responsive marginleft10" />
+        <section>
+            <div class="container">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-sm-10 col-md-5">
+                        <div class="title">
+                            <h1 class="text_dark_blue">
+                                Log in
+                                </h2>
+                        </div>
 
+                        <div class="col-12 mb-3">
+                            <input type="Email" class="custom_input" placeholder="Email" />
+                        </div>
 
-                            </div>
-                            <div class="hidden-xs">
-                                <div class="col-md-7 col-sm-7 text-center">
-                                    <ul class="list-inline wow fadeInUp margin-top-20">
-                                        <li><a class="darkBlue" href="index.html"><b>Home</b></a></li>
-                                        <li><a class="darkBlue" href="whyTalentHut.html"><b>Why TalentHut</b></a></li>
-                                        <li><a class="darkBlue" href="skillsMatching.html"><b>Skills & Matching</b></a>
-                                        </li>
-                                        <li><a class="darkBlue" href="joinOurNetwork.html"><b>Join Our Network</b></a>
-                                        </li>
+                        <div class="col-12 mb-4">
+                            <input type="password" class="custom_input" placeholder="Password" />
+                        </div>
 
-
-                                    </ul>
-                                    <br>
-                                    <p style="font-size:12px;" class="">&copy; 2020 All Rights Reserved.
-                                        <a href="termsAndConditions.html">Terms & Conditions</a> |
-                                        <a href="privacyPolicy.html">Privacy Policy</a></p>
+                        <div class="row mb-3 ">
+                            <div class="col-12 col-md-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
                                 </div>
                             </div>
-                            <div class="hidden-sm  hidden-md hidden-lg">
-                                <div class="col-md-5 col-sm-5 text-center">
-                                    <ul class="list-inline wow fadeInUp margin-top-30">
-                                        <li><a class="darkBlue" href="index.html"><b>Home</b></a></li>
-                                        <li><a class="darkBlue" href="whyTalentHut.html"><b>Why TalentHut</b></a></li>
+                            <div class="col-12 col-md-6 Lost_password ">
+                                <a href="#" class="text_light_blue">Lost password?</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <div class="btn_wrapper">
+                                <a class="btn_service light_blue btn-primary w-100" href="#"> Log in </a>
+                            </div>
+                        </div>
+                        <p class="col-12 footer_text mt-4 mb-5">
+                            No account?
+                            <!-- <a href="signup-customer.html" class="text_light_blue">Join TalentHUT</a> -->
+                            <a href="#" class="text_light_blue">Join TalentHUT</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <section class="footer_section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-md-3">
+                        <div class="footer_about_us">
+                            <img src="assets/images/talentHutLogoBig.png" />
+                            <p class="text-justify">
+                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
+                                IT professionals you need.
+                            </p>
+                            <p class="text-justify">
+                                TalentHut finds, verifies, and hand-matches you with the highly-skilled
+                                freelance IT professionals you need.
+                            </p>
 
-                                    </ul>
-                                    <ul class="list-inline wow fadeInUp ">
+                        </div>
+                    </div>
 
-                                        <li><a class="darkBlue" href="skillsMatching.html"><b>Skills & Matching</b></a>
-                                        </li>
-                                        <li><a class="darkBlue" href="joinOurNetwork.html"><b>Join Our Network</b></a>
-                                        </li>
+                    <div class="col-12 col-md-3">
+                        <div class="footer_quick_link">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="why-talent-hut.html">
+                                        Why TalentHut
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="our-process.html">
+                                        Our Process
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="get-hired.html">
+                                        Get Hired
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        login
+                                    </a>
+                                </li>
+                            </ul>
 
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer_quick_link">
+                            <h3>Services</h3>
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="active">
+                                        Freelancers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="why-talent-hut.html">
+                                        Permanent Hire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="our-process.html">
+                                        Contract Hire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="get-hired.html">
+                                        Managed Soulutions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Join our Network
+                                    </a>
+                                </li>
+                            </ul>
 
-                                    </ul>
-                                    <br>
-                                    <p style="font-size:12px;" class="">&copy; 2020 All Rights Reserved.
-                                        <a href="termsAndConditions.html">Terms & Conditions</a> |
-                                        <a href="privacyPolicy.html">Privacy Policy</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="footer_contact">
+                            <h3>Contact Info</h3>
+                            <div class="footer_contact_item mb-3">
+                                <div class="footer_latest_update_content">
+                                    <b>Address</b>
+                                    <p>Chicago, Ilinois 60542, US</p>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-sm-2 col-xs-12">
-                                <div class="wow fadeInUp ">
-
-                                    <ul class="list-inline margin-top-20">
-
+                            <div class="footer_contact_item mb-3">
+                                <div class="footer_latest_update_content">
+                                    <ul class="footer-social-links">
                                         <li>
-                                            <div class="linkedinicon">
-                                                <a href="https://www.linkedin.com/company/talenthut-on-demand"
-                                                    target="_blank">
-                                                    <i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                        </li>
+                                            <a target="_blank"
+                                                href="https://www.linkedin.com/company/talenthut-on-demand">
 
+                                                <svg class="footer-social-link" xmlns="http://www.w3.org/2000/svg"
+                                                    fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                                </svg>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 d-flex justify-content-center align-items-center">
+                            <p>© 2022 All Rights Reserved. </p>
+                            <!-- <a href="terms-and-conditions.html">Terms And Conditions</a> -->
+                            <a href="#">Terms And Conditions</a> |
+                            <!-- <a href="privacy-policy.html">Privacy Policy</a> -->
+                            <a href="#">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--=== End Footer Version 1 ===-->
-        </div>
-        <!--/wrapper-->
+        </section>
 
-        <!-- JS Global Compulsory -->
-        <script type="text/javascript" src="assets-old/plugins/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="assets-old/plugins/jquery/jquery-migrate.min.js"></script>
-        <script type="text/javascript" src="assets-old/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <!-- JS Implementing Plugins -->
-        <script type="text/javascript" src="assets-old/plugins/back-to-top.js"></script>
 
-        <!-- JS Customization -->
-        <script type="text/javascript" src="assets-old/js/custom.js"></script>
-        <!-- JS Page Level -->
-        <script type="text/javascript" src="assets-old/js/app.js"></script>
-        <script type="text/javascript" src="assets-old/js/login.js"></script>
-        <script type="text/javascript">
-            jQuery(document).ready(function () {
-                App.init();
+    </div>
+
+
+    <script src='assets/js/jquery-3.6.0.min.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function () {
+                hamburger_cross();
             });
-        </script>
-        <!--[if lt IE 9]>
-    <script src="assets-old/plugins/respond.js"></script>
-    <script src="assets-old/plugins/html5shiv.js"></script>
-    <script src="assets-old/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
+            overlay.click(function () {
+                hamburger_cross();
+            });
 
-    </body>
+            function hamburger_cross() {
+
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+    </script>
+
+</body>
 
 </html>
