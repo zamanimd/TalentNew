@@ -742,7 +742,7 @@ a {
 
 .banner {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
 }
 
 #video-viewport {
@@ -860,7 +860,30 @@ a {
     border-color: rgba(255, 255, 255, .2);
     background-color: rgba(255, 255, 255, .2);
 }
+.email_form{
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+}
+.email_form input{
 
+    border-radius: 5px 0 0px 5px;
+    border:0 !important;
+
+}
+.email_form a{   
+    font-weight: 400;
+    width: 150px;
+     margin-left: -6px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: capitalize;
+}
+.email_form a:hover::after{
+    border-radius: 0 5px 5px 0;
+}
 @media screen and (max-width:1200px) {
     #video-viewport {
         overflow: hidden;
@@ -889,7 +912,7 @@ a {
     margin: 10px 0;
     position: relative;
     overflow: hidden;
-    min-height: 282px;
+    min-height: 250px;
     transition: 0.5s;
     background-color: #f8f8f8;
     box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .1);
@@ -1028,7 +1051,7 @@ a {
     text-align: left;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--dark-blue);
 }
@@ -1049,7 +1072,7 @@ a {
     padding: 50px 0;
     width: 100%;
     display: block;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
     position: relative
 }
@@ -1590,6 +1613,52 @@ h2.title {
 
 /*#endregion*/
 
+/*#region partner*/
+.partner .partner_content{
+    margin: 30px auto 30px;
+}
+.partner .owl-nav{
+    display: block !important;
+  
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 43%;
+}
+.partner .owl-nav button{
+    position: absolute;
+    top: -25px;
+    background: var(--dark-blue) !important;
+    color: #fff !important;
+    font-size: 48px !important;
+    border-radius: 0px !important;
+    width: 47px;
+    text-align: center;
+    margin: 0 !important;
+    height: 50px;
+   
+  
+}
+.partner .owl-nav .owl-prev{
+    left: -100px;
+
+}
+.partner .owl-nav .owl-next{
+    right: -100px;
+
+}
+.partner .owl-nav span{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    margin-top: -4px;
+}.owl-carousel .owl-item img {
+    
+    width: 80%;
+}
+/*#endregion*/
+
 .signup_section .shape_wrapper {
     background-image: url(../images/team-index.jpg);
     background-size: cover;
@@ -1713,6 +1782,9 @@ h2.title {
         font-size: 20px;
         line-height: 28px;
     }
+    .partner .owl-nav .owl-prev,.partner .owl-nav .owl-next{
+        display: none;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -1744,10 +1816,13 @@ h2.title {
         font-size: 15px;
         width: 164px;
     }
-
+    .email_form a{
+        width: 140px !important;
+    }
     .logo {
         padding-top: 12px;
     }
+  
 }
 
 /*#endregion*/

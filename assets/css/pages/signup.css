@@ -80,7 +80,7 @@ section {
 
 .button_wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 /*#region form*/
@@ -265,4 +265,18 @@ svg.blue_dots.animate_dots-fade_out path {
 
 section .radio:last-of-type span {
     margin-bottom: 0;
+}
+.other_input{
+    margin-top: 15px;
+    width: 50%;
+}
+#next.disabled{
+    display: none;
+}
+#submit.disabled{
+    display: none;
+}
+
+.button_wrapper .button:hover{
+    color:white;
 }
