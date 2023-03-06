@@ -892,7 +892,7 @@
 
 .professionals .pro_item a {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     align-content: center;
