@@ -1666,6 +1666,10 @@ h2.title {
     background-position: left;
 }
 
+.english-text{
+    text-align: justify;
+}
+
 /*#region responsive*/
 
 @media screen and (max-width:1200px) {
