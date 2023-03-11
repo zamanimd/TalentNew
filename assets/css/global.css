@@ -1670,6 +1670,11 @@ h2.title {
     text-align: justify;
 }
 
+.text-blue-bold{
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
 /*#region responsive*/
 
 @media screen and (max-width:1200px) {
