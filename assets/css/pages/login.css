@@ -14,3 +14,9 @@
     font-weight: 300;
     font-size: 18px;
 }
+.btn_wrapper {
+    width:100% !important;
+}
+.title h1 {
+    margin-top:40px;
+}
