@@ -22,7 +22,7 @@
 
     <div>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row vh-100">
                 <div class="signup col-md-6 m-auto">
                     <div class="logo_signup">
                         <a href="index.html"> <img src="assets/images/talentHutLogo.png" alt="logo"></a>
@@ -30,28 +30,38 @@
 
                     <section>
                         <p class="p_question">Contact information.</p>
-
-                        <p class="mb-3">Choose your industry</p>
-                        <select class="form-control" id="industry" placeholder="Choose your industry ....">
-                            <option>IT</option>
-                            <option>Marketing & Sales</option>
-                            <option>Finance</option>
-                            <option>Healthcare</option>
-                            <option>E-Commerce</option>
-                            <option>Retail</option>
-                            <option>Energy</option>
-                        </select>
-                        <br>
-                        <p class="mb-3">Name</p>
-                        <input type="text" class="custom_input mb-2" placeholder="Full name" />
-                        <p class="mb-3">Email</p>
-                        <input type="text" class="custom_input mb-2" placeholder="Email" />
-                        <p class="mb-3">Mobile</p>
-                        <input type="text" class="custom_input mb-2" placeholder="Address" />
-                        <p class="mb-3">City, State, Country</p>
-                        <input type="text" class="custom_input mb-2" placeholder="Address" />
-                        <p class="mb-3">Zip code</p>
-                        <input type="text" class="custom_input mb-2" placeholder="Address" />
+                        <div class="form-group mb-3">
+                            <p class="mb-2">Choose your industry</p>
+                            <select class="form-select select_custom" id="industry" placeholder="Choose your industry ....">
+                                <option>IT</option>
+                                <option>Marketing & Sales</option>
+                                <option>Finance</option>
+                                <option>Healthcare</option>
+                                <option>E-Commerce</option>
+                                <option>Retail</option>
+                                <option>Energy</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <p class="mb-2">Name</p>
+                            <input type="text" class="custom_input" placeholder="Full name" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <p class="mb-2">Email</p>
+                            <input type="text" class="custom_input" placeholder="Email" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <p class="mb-2">Mobile</p>
+                            <input type="text" class="custom_input" placeholder="Address" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <p class="mb-2">City, State, Country</p>
+                            <input type="text" class="custom_input" placeholder="Address" />
+                        </div>
+                        <div class="form-group">
+                            <p class="mb-2">Zip code</p>
+                            <input type="text" class="custom_input" placeholder="Address" />
+                        </div>
                     </section>
 
                     <section>
@@ -345,9 +355,9 @@
                     </section>
                     <div class="button_wrapper">
                         <!-- <div class="button m-auto" id="next">Get Started</div> -->
-                        <a href="index.html" class="button" id="prev"> Back Home</a>
+                        <a href="index.html" class="button" id="Back"> Back Home</a>
                         <!-- <div class="button float-right" id="next">Next</div> -->
-                        <div class="button" id="submit">Submit</div>
+                        <button class="button border-0" id="next">Submit</button>
                     </div>
 
                 </div>
@@ -370,13 +380,9 @@
                                 <img src="assets/images/slider/CNPC-logo.png" width="125" />
                             </div>
                         </div>
-
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-md-6">
                                 <img src="assets/images/slider/Corestack-logo.png" width="125" />
-                            </div>
-                            <div class="col-md-6">
-                                <!-- <img src="assets/images/signup/bridgestone.svg" /> -->
                             </div>
                         </div>
                     </div>
@@ -392,11 +398,9 @@
     <script>
         $(document).ready(function () {
 
-
             var child = 1;
             var length = $("section").length - 1;
             $("#prev").addClass("disabled");
-            $("#submit").addClass("disabled");
 
             $("section").not("section:nth-of-type(1)").hide();
             $("section").not("section:nth-of-type(1)").css('transform', 'translateX(100px)');
