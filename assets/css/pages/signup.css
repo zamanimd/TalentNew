@@ -96,7 +96,7 @@ section {
     border-radius: 5px;
     padding: 15px 25px;
      /* display: inline-block;  */
-    margin: 10px;
+    margin:2px;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -275,6 +275,7 @@ section .radio:last-of-type span {
 .other_input{
     margin-top: 15px;
     width: 50%;
+    border: 1px solid #455065;
 }
 #next.disabled{
     display: none;
@@ -286,8 +287,23 @@ section .radio:last-of-type span {
 .button_wrapper .button:hover{
     color:white;
 }
+@media screen and (max-width:768px){
+    .the_map-talent{
+        display: none;
+    }
+}
 @media screen and (max-width:920px){
     .sidebar{
+        width: 100%;
+    }
+    .signup {
+      margin-top:50px !important;
+      margin-bottom:50px !important;
+    }
+    .other_input{
+        width: 100%;
+    }
+    .the_map,.the_map svg{
         width: 100%;
     }
 }

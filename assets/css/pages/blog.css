@@ -17,11 +17,16 @@
 }
 
 .inner_banner h2 {
-    font-size: 3rem;
-    font-weight: 900;
+    margin-bottom: 12px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
     text-transform: uppercase;
-    line-height: 3.2rem;
-    letter-spacing: 1px;
+    line-height: 47px;
+    font-size: 46px;
+    color: #ebedf1;
+    text-shadow: 0 0 50px #021a32;
+    text-align: center;
+    letter-spacing: 0px;
 }
 
 .inner_banner p {
@@ -76,8 +81,8 @@
 }
 
 .publication>.publication_a .publication_img {
-    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
-    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    /* -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%); */
     height: 280px;
     width: 100%;
     overflow: hidden;
@@ -92,7 +97,10 @@
     transition: all 0.25s ease-in-out;
     border-radius: 15px;
     height: auto;
-    width: 100%;
+    width: auto;
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 15px;
 }
 
 .publication>.publication_a:hover .publication_img img {
@@ -136,7 +144,8 @@
 .publication_content p {
     font-size: 17px;
     line-height: 24px;
-    font-weight: 400;  color: #222;
+    font-weight: 400;
+    color: #222;
 }
 
 .publication_section .button {
@@ -190,7 +199,8 @@
 
 .publication_a:hover .read_more,
 .publication_a:hover .read_more {
-    color: var(--dark-blue);}
+    color: var(--dark-blue);
+}
 
 
 /*#endregion*/
@@ -228,3 +238,10 @@
 
 
 /*#endregion*/
+@media screen and (max-width: 768px) {
+    .inner_banner h2 {
+        
+        line-height: 36px;
+        font-size: 32px;
+    }
+}
