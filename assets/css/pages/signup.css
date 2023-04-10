@@ -28,6 +28,8 @@
 }
 
 .sidebar img {
+    margin: auto;
+    display: block;
     margin-bottom: 32px;
 }
 
@@ -283,4 +285,9 @@ section .radio:last-of-type span {
 
 .button_wrapper .button:hover{
     color:white;
+}
+@media screen and (max-width:920px){
+    .sidebar{
+        width: 100%;
+    }
 }

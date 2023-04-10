@@ -29,8 +29,7 @@ $(document).ready(function() {
         $('#wrapper').toggleClass('toggled');
     });
 
-    $(".drop_service").click(function() {
-        $(".drop_service_content").toggle();
-
+    $(".navbar li span").click(function() {
+        $(this).siblings().toggle();
     })
 });

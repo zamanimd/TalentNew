@@ -951,31 +951,43 @@
         transform: scale(0.7);
         margin: -65px;
     }
+
     .circle_parent_green {
         transform: scale(0.8);
     }
+
     .line_container {
         width: 18%;
         transform: scale(0.8);
     }
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:991px) {
     .images_wrapper {
         margin-bottom: 110px;
     }
+
     .inner_banner h2 {
         text-align: left;
         line-height: 36px;
         font-size: 32px;
     }
+
     .images_wrapper {
         margin-bottom: 110px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .line_container {
         display: none;
+    }
+
+    .about_first {
+        padding-bottom: 0px;
+    }   
+    .about_first .btn_service{
+       margin-bottom:40px !important;
     }
 }
 
@@ -985,12 +997,15 @@
         line-height: 36px;
         font-size: 32px;
     }
+
     .circle_parent {
         transform: scale(0.7);
     }
+
     .circle_parent_green {
         transform: scale(0.8);
     }
+
     .circle_1,
     .circle_parent {
         border-color: transparent;
@@ -1002,20 +1017,25 @@
         left: 0;
         bottom: -130px;
     }
+
     .freelancer_img_wrapper .down img:last-of-type {
         left: 0;
         bottom: -130px;
     }
+
     .freelancer_img_wrapper .down {
         margin-top: 130px;
         margin-bottom: 160px;
     }
+
     .images_wrapper img {
         margin: auto
     }
+
     .circle_parent {
         margin: -100px;
     }
+
     .animate_image {
         transform: scale(0.5);
         margin: -120px;
